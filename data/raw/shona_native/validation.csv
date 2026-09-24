@@ -1,0 +1,37 @@
+text,label,category,severity,source_lemma,surface_variant,has_literal_sense,context_dependent,synthetic
+Ndakaona munyepi mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,munyepi,,no,yes,True
+Shoko rokuti muroyi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,muroyi,,yes,yes,True
+Uri munyepi.,toxic,insult,2,munyepi,,no,yes,True
+Ndakaona tsotsi mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,tsotsi,,yes,yes,True
+bhinya,toxic,character_attack,3,bhinya,bhinya|mabhinya,yes,yes,False
+Iwe chisina maturo.,toxic,insult,2,chisina maturo,,no,yes,True
+Ndakaona bhinya mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,bhinya,,yes,yes,True
+nzenza,toxic,sexual_slur,4,nzenza,nzenza|manzenza,no,no,False
+Iwe svira.,toxic,insult,2,svira,,no,no,True
+mhata yako,toxic,sexual_vulgar,4,mhata,mhata yako,no,no,True
+mhuka,toxic,dehumanising,3,mhuka,mhuka|uri mhuka,yes,yes,False
+uri gudo,toxic,animal,2,gudo,uri gudo,yes,yes,True
+zimbavha,toxic,character_attack,3,mbavha,zimbavha,yes,yes,True
+mahure,toxic,sexual_slur,4,hure,mahure,no,no,True
+uri benzi,toxic,insult_general,2,benzi,uri benzi,no,no,True
+Ndakaona mhuka mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,mhuka,,yes,yes,True
+uri mutengesi,toxic,political_incitement,4,mutengesi,uri mutengesi,yes,yes,True
+Mashoko aya haana kunaka: bhinya.,toxic,profanity,2,bhinya,,yes,yes,True
+Iwe dhongi.,toxic,insult,2,dhongi,,yes,yes,True
+Uri svira.,toxic,insult,2,svira,,no,no,True
+Uri gonzo.,toxic,insult,2,gonzo,,yes,yes,True
+Usandidaidza mbudzi.,toxic,directed_abuse,2,mbudzi,,yes,yes,True
+Usandidaidza hauna musoro.,toxic,directed_abuse,2,hauna musoro,,no,no,True
+mupengo,toxic,ableist,3,mupengo,mupengo|mapengo|zipengo|uri mupengo,yes,yes,False
+Mashoko aya haana kunaka: nzenza.,toxic,profanity,2,nzenza,,no,no,True
+Mashoko aya haana kunaka: beche.,toxic,profanity,2,beche,,no,no,True
+vatengesi,toxic,political_incitement,4,mutengesi,vatengesi,yes,yes,True
+Iwe tsvina yemunhu.,toxic,insult,2,tsvina yemunhu,,no,no,True
+Uri nzenza.,toxic,insult,2,nzenza,,no,no,True
+Iwe gonzo.,toxic,insult,2,gonzo,,yes,yes,True
+Uri tsotsi.,toxic,insult,2,tsotsi,,yes,yes,True
+munyepi,toxic,character_attack,2,munyepi,munyepi|vanyepi|uri munyepi,no,yes,False
+Uri pfambi.,toxic,insult,2,pfambi,,yes,yes,True
+chifeve,toxic,sexual_slur,4,chifeve,chifeve|zvifeve|uri chifeve,no,no,False
+benzi,toxic,insult_general,2,benzi,benzi|zibenzi|mapenzi|uri benzi|iwe benzi,no,no,False
+zipengo,toxic,ableist,3,mupengo,zipengo,yes,yes,True

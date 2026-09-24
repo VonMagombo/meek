@@ -2,3 +2,12 @@ venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.pytest_cache/
+
+# model weights: too large for git, not reproducible from a diff anyway.
+# Regenerate with ml/training/train_shona_classifier.py (needs data/processed/shona/,
+# built by ml/translation/translate_jigsaw.py). JSON eval/metrics reports in
+# this same directory ARE tracked (small, text, and the evidence the README's
+# Shona numbers cite) -- only the actual weight-bearing dirs are excluded.
+data/processed/shona_classifier/checkpoints/
+data/processed/shona_classifier/final/

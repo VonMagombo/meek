@@ -1,0 +1,15 @@
+{
+  "eval_loss": 0.3771291673183441,
+  "eval_macro_f1": 0.4410016560620587,
+  "eval_micro_f1": 0.7047619047619048,
+  "eval_toxic_f1": 0.8859060402684564,
+  "eval_severe_toxic_f1": 0.18181818181818182,
+  "eval_obscene_f1": 0.7142857142857143,
+  "eval_threat_f1": 0.0,
+  "eval_insult_f1": 0.864,
+  "eval_identity_hate_f1": 0.0,
+  "eval_runtime": 22.5212,
+  "eval_samples_per_second": 6.039,
+  "eval_steps_per_second": 0.4,
+  "epoch": 4.0
+}

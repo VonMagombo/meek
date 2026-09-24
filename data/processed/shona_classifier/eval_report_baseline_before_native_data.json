@@ -1,0 +1,257 @@
+{
+  "silver_test": {
+    "n_examples": 100,
+    "macro_f1": 0.3358808462069332,
+    "micro_f1": 0.4631578947368421,
+    "per_label": {
+      "toxic": {
+        "precision": 0.78125,
+        "recall": 0.5208333333333334,
+        "f1": 0.625,
+        "support": 48
+      },
+      "severe_toxic": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.2857142857142857,
+        "support": 20
+      },
+      "obscene": {
+        "precision": 0.6206896551724138,
+        "recall": 0.5,
+        "f1": 0.5538461538461539,
+        "support": 36
+      },
+      "threat": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 18
+      },
+      "insult": {
+        "precision": 0.6551724137931034,
+        "recall": 0.475,
+        "f1": 0.5507246376811594,
+        "support": 40
+      },
+      "identity_hate": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25
+      }
+    }
+  },
+  "golden_set": {
+    "n_examples": 18,
+    "macro_f1": 0.28095238095238095,
+    "micro_f1": 0.4,
+    "per_label": {
+      "toxic": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 6
+      },
+      "severe_toxic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "obscene": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333,
+        "support": 4
+      },
+      "threat": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "insult": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714,
+        "support": 5
+      },
+      "identity_hate": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "examples": [
+      {
+        "text_en": "Thanks so much for taking the time to review my PR!",
+        "text_sn": "Ndinoonga zvikuru kwazvo nokuda kwokuwana nguva yokuhwirudzura kupfupfupfupfuudza kwangu!",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "This article about the French Revolution was really informative.",
+        "text_sn": "Nyaya ino inotaura nezveFrance Reform yakanga ichirayiridza chaizvo.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "I disagree with your conclusion, but I see where you're coming from.",
+        "text_sn": "Handibvumirani nemhedziso yenyu, asi ndinoona kwamuri kubva.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "Could you clarify what you meant in the third paragraph?",
+        "text_sn": "Ungajekesa here zvawaireva mundima yechitatu?",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "The weather has been great this week for hiking.",
+        "text_sn": "Mamiriro okunze ave ari makuru vhiki ino nokuda kwokubhururuka.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "That movie was disappointing, the pacing dragged in the second act.",
+        "text_sn": "Vhidhiyo iyoyo yaiodza mwoyo, kudhonza kwacho kwakazvuzvurudzwa muchiito chechipiri.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "You're an absolute idiot and everyone here thinks so too.",
+        "text_sn": "Uri munhu ane manomano akakwana uye munhu wose ari pano anofungawo saizvozvo.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "Shut up you stupid idiot, nobody wants you here.",
+        "text_sn": "Kukupengesa fuza, hapana munhu anoda kuti uuwane pano.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "This is fucking bullshit and you know it, asshole.",
+        "text_sn": "Ikoku kunokatyamadza bull trisht uye unokuziva, seblacket.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "I will find you and kill you, you piece of garbage.",
+        "text_sn": "Ndichakuwana ndokukuuraya, iwe marara.",
+        "expected": [
+          "insult",
+          "threat",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "known_limitation": false
+      },
+      {
+        "text_en": "Watch your back, I know where you live and I will hurt you.",
+        "text_sn": "Tarira shure kwako, ndinoziva kwaunogara uye ndichakurwadzisa.",
+        "expected": [
+          "threat",
+          "toxic"
+        ],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "You are a worthless piece of shit and I hope you fucking die, you disgusting waste of space.",
+        "text_sn": "Uri mupfuri asina maturo uye ndinokarira kuti unofa uchinyangarika, iwe tsvina inonyangadza yenzvimbo.",
+        "expected": [
+          "insult",
+          "obscene",
+          "severe_toxic",
+          "threat",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "known_limitation": false
+      },
+      {
+        "text_en": "People like you don't belong in this country because of your race.",
+        "text_sn": "Vanhu vakafanana newe havasi munyika ino nemhaka yedzinza rako.",
+        "expected": [
+          "identity_hate",
+          "toxic"
+        ],
+        "predicted": [],
+        "known_limitation": true
+      },
+      {
+        "text_en": "Go back to your own country, we don't want your kind here.",
+        "text_sn": "Dzokera kunyika yako umene, hatidi rudzi rwako pano.",
+        "expected": [
+          "identity_hate",
+          "toxic"
+        ],
+        "predicted": [
+          "toxic"
+        ],
+        "known_limitation": true
+      },
+      {
+        "text_en": "I would never call someone an idiot just because I disagree with them.",
+        "text_sn": "Handisati ndaizotongodana mumwe munhu kuti mupanduki nemhaka bedzi yokuti handibvumirani navo.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "The report quoted the email verbatim: 'you are worthless.' The board condemned the message.",
+        "text_sn": "Mushumo wacho wakataura mashoko eshoko rokuti phal phatimi: Hamukoshi.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "This proposal is poorly reasoned and the data analysis has serious flaws.",
+        "text_sn": "Izvi hazvinyatsofungiki uye kuongorora mashoko acho kune zvikanganiso zvakakura.",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      },
+      {
+        "text_en": "Oh great, another Monday. Can't wait for the meeting.",
+        "text_sn": "Haiwa, mukuru, mumwe Muvhuro;",
+        "expected": [],
+        "predicted": [],
+        "known_limitation": false
+      }
+    ]
+  }
+}

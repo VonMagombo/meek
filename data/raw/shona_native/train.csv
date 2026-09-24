@@ -1,0 +1,287 @@
+text,label,category,severity,source_lemma,surface_variant,has_literal_sense,context_dependent,synthetic
+vanyepi,toxic,character_attack,2,munyepi,vanyepi,no,yes,True
+Usandidaidza chidhoma.,toxic,directed_abuse,2,chidhoma,,yes,yes,True
+Usandidaidza chifeve.,toxic,directed_abuse,2,chifeve,,no,no,True
+Mashoko aya haana kunaka: rovha.,toxic,profanity,2,rovha,,no,no,True
+Usandidaidza benzi.,toxic,directed_abuse,2,benzi,,no,no,True
+Mashoko aya haana kunaka: mutorwa.,toxic,profanity,2,mutorwa,,yes,yes,True
+Iwe chikara.,toxic,insult,2,chikara,,yes,yes,True
+Uri imbwa.,toxic,insult,2,imbwa,,yes,yes,True
+Usandidaidza muroyi.,toxic,directed_abuse,2,muroyi,,yes,yes,True
+zvirema,toxic,ableist,3,chirema,zvirema,yes,yes,True
+uri rombe,toxic,insult_general,3,rombe,uri rombe,no,no,True
+Iwe mupengo.,toxic,insult,2,mupengo,,yes,yes,True
+uri tsotsi,toxic,character_attack,3,tsotsi,uri tsotsi,yes,yes,True
+chidhoma,toxic,dehumanising,3,chidhoma,chidhoma|zvidhoma,yes,yes,False
+Usandidaidza hure.,toxic,directed_abuse,2,hure,,no,no,True
+Iwe gudo.,toxic,insult,2,gudo,,yes,yes,True
+Uri rombe.,toxic,insult,2,rombe,,no,no,True
+machende,toxic,sexual_vulgar,3,machende,machende,no,no,False
+Mashoko aya haana kunaka: mbavha.,toxic,profanity,2,mbavha,,yes,yes,True
+Shoko rokuti mutorwa riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mutorwa,,yes,yes,True
+yamai vako,toxic,maternal_insult,4,ramai vako,yamai vako,no,no,True
+amai vako,toxic,maternal_insult,3,amai vako,amai vako|mai vako,yes,yes,False
+ramai vako,toxic,maternal_insult,4,ramai vako,ramai vako|yamai vako|ramai wako|yamai wako,no,no,False
+Iwe munyepi.,toxic,insult,2,munyepi,,no,yes,True
+Ndakaona bofu mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,bofu,,yes,yes,True
+Usandidaidza svira.,toxic,directed_abuse,2,svira,,no,no,True
+Mashoko aya haana kunaka: chikara.,toxic,profanity,2,chikara,,yes,yes,True
+Usandidaidza mboro.,toxic,directed_abuse,2,mboro,,no,no,True
+Uri beche.,toxic,insult,2,beche,,no,no,True
+Ndakaona hwai mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,hwai,,yes,yes,True
+Uri bofu.,toxic,insult,2,bofu,,yes,yes,True
+Usandidaidza munyepi.,toxic,directed_abuse,2,munyepi,,no,yes,True
+Iwe chifeve.,toxic,insult,2,chifeve,,no,no,True
+Iwe chidhoma.,toxic,insult,2,chidhoma,,yes,yes,True
+Ndakaona musoro wako mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,musoro wako,,yes,yes,True
+rombe,toxic,insult_general,3,rombe,rombe|marombe|zirombe|uri rombe,no,no,False
+hure,toxic,sexual_slur,4,hure,hure|mahure|zihure|uri hure,no,no,False
+uri munyepi,toxic,character_attack,2,munyepi,uri munyepi,no,yes,True
+uri nyoka,toxic,animal,3,nyoka,uri nyoka,yes,yes,True
+Usandidaidza rovha.,toxic,directed_abuse,2,rovha,,no,no,True
+Usandidaidza rombe.,toxic,directed_abuse,2,rombe,,no,no,True
+makonzo,toxic,animal,3,gonzo,makonzo,yes,yes,True
+mbolo,toxic,sexual_vulgar,4,mboro,mbolo,no,no,True
+mabhinya,toxic,character_attack,3,bhinya,mabhinya,yes,yes,True
+Mashoko aya haana kunaka: chimumumu.,toxic,profanity,2,chimumumu,,yes,yes,True
+Ndakaona nguruve mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,nguruve,,yes,yes,True
+Uri benzi.,toxic,insult,2,benzi,,no,no,True
+zirombe,toxic,insult_general,3,rombe,zirombe,no,no,True
+Shoko rokuti bofu riri mubhuku.,non-toxic,literal_or_metalinguistic,0,bofu,,yes,yes,True
+mbavha,toxic,character_attack,3,mbavha,mbavha|zimbavha|mambavha|uri mbavha,yes,yes,False
+zimbwa,toxic,animal,3,imbwa,zimbwa,yes,yes,True
+Uri muroyi.,toxic,insult,2,muroyi,,yes,yes,True
+Uri musoro wako.,toxic,insult,2,musoro wako,,yes,yes,True
+Usandidaidza mbavha.,toxic,directed_abuse,2,mbavha,,yes,yes,True
+Shoko rokuti dhongi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,dhongi,,yes,yes,True
+Shoko rokuti chimumumu riri mubhuku.,non-toxic,literal_or_metalinguistic,0,chimumumu,,yes,yes,True
+Iwe muroyi.,toxic,insult,2,muroyi,,yes,yes,True
+Uri nyoka.,toxic,insult,2,nyoka,,yes,yes,True
+Shoko rokuti musoro wako riri mubhuku.,non-toxic,literal_or_metalinguistic,0,musoro wako,,yes,yes,True
+Uri hauna musoro.,toxic,insult,2,hauna musoro,,no,no,True
+Mashoko aya haana kunaka: amai vako.,toxic,profanity,2,amai vako,,yes,yes,True
+Usandidaidza nzenza.,toxic,directed_abuse,2,nzenza,,no,no,True
+Usandidaidza dhongi.,toxic,directed_abuse,2,dhongi,,yes,yes,True
+Usandidaidza nguruve.,toxic,directed_abuse,2,nguruve,,yes,yes,True
+Usandidaidza chikara.,toxic,directed_abuse,2,chikara,,yes,yes,True
+dhongi,toxic,animal,2,dhongi,dhongi|zidhongi|madhongi|uri dhongi,yes,yes,False
+Ndakaona gonzo mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,gonzo,,yes,yes,True
+Iwe musoro wako.,toxic,insult,2,musoro wako,,yes,yes,True
+zibenzi,toxic,insult_general,2,benzi,zibenzi,no,no,True
+matsotsi,toxic,character_attack,3,tsotsi,matsotsi,yes,yes,True
+mhata,toxic,sexual_vulgar,4,mhata,mhata|mhata yako,no,no,False
+Ndakaona dhongi mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,dhongi,,yes,yes,True
+Usandidaidza ramai vako.,toxic,directed_abuse,2,ramai vako,,no,no,True
+Mashoko aya haana kunaka: musoro wako.,toxic,profanity,2,musoro wako,,yes,yes,True
+Uri ramai vako.,toxic,insult,2,ramai vako,,no,no,True
+Shoko rokuti chikara riri mubhuku.,non-toxic,literal_or_metalinguistic,0,chikara,,yes,yes,True
+Iwe hwai.,toxic,insult,2,hwai,,yes,yes,True
+mutorwa,toxic,ethnic_hate,2,mutorwa,mutorwa|vatorwa,yes,yes,False
+Shoko rokuti chidhoma riri mubhuku.,non-toxic,literal_or_metalinguistic,0,chidhoma,,yes,yes,True
+Mashoko aya haana kunaka: mhata.,toxic,profanity,2,mhata,,no,no,True
+Iwe mutorwa.,toxic,insult,2,mutorwa,,yes,yes,True
+Usandidaidza gonzo.,toxic,directed_abuse,2,gonzo,,yes,yes,True
+hwai,toxic,animal,1,hwai,hwai|makwai,yes,yes,False
+Usandidaidza mhata.,toxic,directed_abuse,2,mhata,,no,no,True
+Shoko rokuti bhinya riri mubhuku.,non-toxic,literal_or_metalinguistic,0,bhinya,,yes,yes,True
+hauna pfungwa,toxic,insult_general,2,hauna pfungwa,hauna pfungwa,no,no,False
+Mashoko aya haana kunaka: mupengo.,toxic,profanity,2,mupengo,,yes,yes,True
+Mashoko aya haana kunaka: mboro.,toxic,profanity,2,mboro,,no,no,True
+Shoko rokuti gonzo riri mubhuku.,non-toxic,literal_or_metalinguistic,0,gonzo,,yes,yes,True
+Uri mboro.,toxic,insult,2,mboro,,no,no,True
+uri mbudzi,toxic,animal,2,mbudzi,uri mbudzi,yes,yes,True
+Ndakaona pfambi mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,pfambi,,yes,yes,True
+Usandidaidza chirema.,toxic,directed_abuse,2,chirema,,yes,yes,True
+mboro,toxic,sexual_vulgar,4,mboro,mboro|mboroo|mbolo,no,no,False
+Iwe nguruve.,toxic,insult,2,nguruve,,yes,yes,True
+nguruve,toxic,animal,3,nguruve,nguruve|zinguruve|uri nguruve,yes,yes,False
+Mashoko aya haana kunaka: munyepi.,toxic,profanity,2,munyepi,,no,yes,True
+Mashoko aya haana kunaka: hwai.,toxic,profanity,2,hwai,,yes,yes,True
+Mashoko aya haana kunaka: muroyi.,toxic,profanity,2,muroyi,,yes,yes,True
+matengesi,toxic,political_incitement,4,mutengesi,matengesi,yes,yes,True
+Ndakaona chikara mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chikara,,yes,yes,True
+chimumumu,toxic,ableist,3,chimumumu,chimumumu|zvimumumu,yes,yes,False
+Iwe chirema.,toxic,insult,2,chirema,,yes,yes,True
+Iwe mboro.,toxic,insult,2,mboro,,no,no,True
+Uri gudo.,toxic,insult,2,gudo,,yes,yes,True
+bofu,toxic,ableist,3,bofu,bofu|mapofu|uri bofu,yes,yes,False
+musoro wako,toxic,insult_general,2,musoro wako,musoro wako,yes,yes,False
+Iwe mutengesi.,toxic,insult,2,mutengesi,,yes,yes,True
+uri tsvina,toxic,dehumanising,3,tsvina,uri tsvina,yes,yes,True
+Shoko rokuti nyoka riri mubhuku.,non-toxic,literal_or_metalinguistic,0,nyoka,,yes,yes,True
+muroyi,toxic,accusation,4,muroyi,muroyi|varoyi|uri muroyi,yes,yes,False
+Ndakaona mutorwa mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,mutorwa,,yes,yes,True
+Usandidaidza mhuka.,toxic,directed_abuse,2,mhuka,,yes,yes,True
+Iwe mhuka.,toxic,insult,2,mhuka,,yes,yes,True
+Iwe nzenza.,toxic,insult,2,nzenza,,no,no,True
+Iwe ramai vako.,toxic,insult,2,ramai vako,,no,no,True
+Iwe rovha.,toxic,insult,2,rovha,,no,no,True
+ndokusvira,toxic,sexual_vulgar,4,svira,ndokusvira,no,no,True
+Iwe imbwa.,toxic,insult,2,imbwa,,yes,yes,True
+varoyi,toxic,accusation,4,muroyi,varoyi,yes,yes,True
+Iwe mbavha.,toxic,insult,2,mbavha,,yes,yes,True
+Mashoko aya haana kunaka: tsvina yemunhu.,toxic,profanity,2,tsvina yemunhu,,no,no,True
+Usandidaidza amai vako.,toxic,directed_abuse,2,amai vako,,yes,yes,True
+mapenzi,toxic,insult_general,2,benzi,mapenzi,no,no,True
+Usandidaidza chisina maturo.,toxic,directed_abuse,2,chisina maturo,,no,yes,True
+Usandidaidza mutorwa.,toxic,directed_abuse,2,mutorwa,,yes,yes,True
+marombe,toxic,insult_general,3,rombe,marombe,no,no,True
+Usandidaidza chimumumu.,toxic,directed_abuse,2,chimumumu,,yes,yes,True
+Shoko rokuti amai vako riri mubhuku.,non-toxic,literal_or_metalinguistic,0,amai vako,,yes,yes,True
+Shoko rokuti mutengesi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mutengesi,,yes,yes,True
+uri hure,toxic,sexual_slur,4,hure,uri hure,no,no,True
+Uri hure.,toxic,insult,2,hure,,no,no,True
+madhongi,toxic,animal,2,dhongi,madhongi,yes,yes,True
+Ndakaona chirema mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chirema,,yes,yes,True
+Uri matako.,toxic,insult,2,matako,,yes,yes,True
+Iwe munhu asina maturo.,toxic,insult,2,munhu asina maturo,,no,no,True
+Shoko rokuti gudo riri mubhuku.,non-toxic,literal_or_metalinguistic,0,gudo,,yes,yes,True
+Usandidaidza gudo.,toxic,directed_abuse,2,gudo,,yes,yes,True
+bheche,toxic,sexual_vulgar,4,beche,bheche,no,no,True
+mboroo,toxic,sexual_vulgar,4,mboro,mboroo,no,no,True
+zihure,toxic,sexual_slur,4,hure,zihure,no,no,True
+Mashoko aya haana kunaka: nguruve.,toxic,profanity,2,nguruve,,yes,yes,True
+Ndakaona imbwa mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,imbwa,,yes,yes,True
+matako ako,toxic,sexual_vulgar,2,matako,matako ako,yes,yes,True
+Uri mupengo.,toxic,insult,2,mupengo,,yes,yes,True
+munhu asina maturo,toxic,insult_general,3,munhu asina maturo,munhu asina maturo,no,no,False
+Uri mbavha.,toxic,insult,2,mbavha,,yes,yes,True
+Usandidaidza imbwa.,toxic,directed_abuse,2,imbwa,,yes,yes,True
+Mashoko aya haana kunaka: hauna pfungwa.,toxic,profanity,2,hauna pfungwa,,no,no,True
+Uri mbudzi.,toxic,insult,2,mbudzi,,yes,yes,True
+Mashoko aya haana kunaka: tsvina.,toxic,profanity,2,tsvina,,yes,yes,True
+uri chifeve,toxic,sexual_slur,4,chifeve,uri chifeve,no,no,True
+Shoko rokuti nguruve riri mubhuku.,non-toxic,literal_or_metalinguistic,0,nguruve,,yes,yes,True
+uri mbavha,toxic,character_attack,3,mbavha,uri mbavha,yes,yes,True
+Uri machende.,toxic,insult,2,machende,,no,no,True
+Shoko rokuti chisina maturo riri mubhuku.,non-toxic,literal_or_metalinguistic,0,chisina maturo,,no,yes,True
+Iwe rombe.,toxic,insult,2,rombe,,no,no,True
+zvimumumu,toxic,ableist,3,chimumumu,zvimumumu,yes,yes,True
+Usandidaidza matako.,toxic,directed_abuse,2,matako,,yes,yes,True
+zidhongi,toxic,animal,2,dhongi,zidhongi,yes,yes,True
+uri gonzo,toxic,animal,3,gonzo,uri gonzo,yes,yes,True
+Iwe mabhurandaya.,toxic,insult,2,mabhurandaya,,no,no,True
+Shoko rokuti mupengo riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mupengo,,yes,yes,True
+Ndakaona chidhoma mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chidhoma,,yes,yes,True
+zinyoka,toxic,animal,3,nyoka,zinyoka,yes,yes,True
+Uri dhongi.,toxic,insult,2,dhongi,,yes,yes,True
+Iwe beche.,toxic,insult,2,beche,,no,no,True
+Iwe bofu.,toxic,insult,2,bofu,,yes,yes,True
+Shoko rokuti munyepi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,munyepi,,no,yes,True
+Usandidaidza bofu.,toxic,directed_abuse,2,bofu,,yes,yes,True
+Mashoko aya haana kunaka: gudo.,toxic,profanity,2,gudo,,yes,yes,True
+mutengesi,toxic,political_incitement,4,mutengesi,mutengesi|vatengesi|matengesi|uri mutengesi,yes,yes,False
+tsvina yemunhu,toxic,dehumanising,4,tsvina yemunhu,tsvina yemunhu,no,no,False
+Iwe chimumumu.,toxic,insult,2,chimumumu,,yes,yes,True
+Uri chisina maturo.,toxic,insult,2,chisina maturo,,no,yes,True
+Mashoko aya haana kunaka: gonzo.,toxic,profanity,2,gonzo,,yes,yes,True
+Mashoko aya haana kunaka: chirema.,toxic,profanity,2,chirema,,yes,yes,True
+Mashoko aya haana kunaka: dhongi.,toxic,profanity,2,dhongi,,yes,yes,True
+uri chirema,toxic,ableist,3,chirema,uri chirema,yes,yes,True
+Ndakaona gudo mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,gudo,,yes,yes,True
+Usandidaidza hwai.,toxic,directed_abuse,2,hwai,,yes,yes,True
+Ndakaona mupengo mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,mupengo,,yes,yes,True
+Mashoko aya haana kunaka: ramai vako.,toxic,profanity,2,ramai vako,,no,no,True
+Shoko rokuti mbudzi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mbudzi,,yes,yes,True
+svira,toxic,sexual_vulgar,4,svira,svira|kusvira|kusvirwa|anosvira|ndokusvira,no,no,False
+tsotsi,toxic,character_attack,3,tsotsi,tsotsi|matsotsi|uri tsotsi,yes,yes,False
+matako,toxic,sexual_vulgar,2,matako,matako|matako ako,yes,yes,False
+anosvira,toxic,sexual_vulgar,4,svira,anosvira,no,no,True
+Uri rovha.,toxic,insult,2,rovha,,no,no,True
+Mashoko aya haana kunaka: rombe.,toxic,profanity,2,rombe,,no,no,True
+Usandidaidza machende.,toxic,directed_abuse,2,machende,,no,no,True
+Mashoko aya haana kunaka: mutengesi.,toxic,profanity,2,mutengesi,,yes,yes,True
+imbwa iwe,toxic,animal,3,imbwa,imbwa iwe,yes,yes,True
+uri bofu,toxic,ableist,3,bofu,uri bofu,yes,yes,True
+Shoko rokuti tsvina riri mubhuku.,non-toxic,literal_or_metalinguistic,0,tsvina,,yes,yes,True
+Uri mhuka.,toxic,insult,2,mhuka,,yes,yes,True
+makudo,toxic,animal,2,gudo,makudo,yes,yes,True
+Shoko rokuti matako riri mubhuku.,non-toxic,literal_or_metalinguistic,0,matako,,yes,yes,True
+mapfambi,toxic,sexual_slur,4,pfambi,mapfambi,yes,yes,True
+Shoko rokuti hwai riri mubhuku.,non-toxic,literal_or_metalinguistic,0,hwai,,yes,yes,True
+Iwe hauna musoro.,toxic,insult,2,hauna musoro,,no,no,True
+mbudzi,toxic,animal,2,mbudzi,mbudzi|zimbudzi|uri mbudzi,yes,yes,False
+hauna musoro,toxic,insult_general,2,hauna musoro,hauna musoro,no,no,False
+Uri chifeve.,toxic,insult,2,chifeve,,no,no,True
+Usandidaidza tsotsi.,toxic,directed_abuse,2,tsotsi,,yes,yes,True
+Iwe machende.,toxic,insult,2,machende,,no,no,True
+Uri tsvina yemunhu.,toxic,insult,2,tsvina yemunhu,,no,no,True
+gonzo,toxic,animal,3,gonzo,gonzo|makonzo|uri gonzo,yes,yes,False
+chikara,toxic,dehumanising,3,chikara,chikara|zvikara|uri chikara,yes,yes,False
+vatorwa,toxic,ethnic_hate,2,mutorwa,vatorwa,yes,yes,True
+Ndakaona amai vako mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,amai vako,,yes,yes,True
+Mashoko aya haana kunaka: munhu asina maturo.,toxic,profanity,2,munhu asina maturo,,no,no,True
+zigudo,toxic,animal,2,gudo,zigudo,yes,yes,True
+imbwa yemunhu,toxic,animal,3,imbwa,imbwa yemunhu,yes,yes,True
+Uri mutengesi.,toxic,insult,2,mutengesi,,yes,yes,True
+Iwe nyoka.,toxic,insult,2,nyoka,,yes,yes,True
+Uri mhata.,toxic,insult,2,mhata,,no,no,True
+Iwe matako.,toxic,insult,2,matako,,yes,yes,True
+Mashoko aya haana kunaka: mhuka.,toxic,profanity,2,mhuka,,yes,yes,True
+Shoko rokuti chirema riri mubhuku.,non-toxic,literal_or_metalinguistic,0,chirema,,yes,yes,True
+Iwe mbudzi.,toxic,insult,2,mbudzi,,yes,yes,True
+imbwa,toxic,animal,3,imbwa,imbwa|zimbwa|uri imbwa|imbwa iwe|imbwa yemunhu,yes,yes,False
+nyoka,toxic,animal,3,nyoka,nyoka|zinyoka|uri nyoka,yes,yes,False
+Iwe tsotsi.,toxic,insult,2,tsotsi,,yes,yes,True
+Shoko rokuti mbavha riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mbavha,,yes,yes,True
+zvikara,toxic,dehumanising,3,chikara,zvikara,yes,yes,True
+marovha,toxic,insult_general,2,rovha,marovha,no,no,True
+Usandidaidza mabhurandaya.,toxic,directed_abuse,2,mabhurandaya,,no,no,True
+zvidhoma,toxic,dehumanising,3,chidhoma,zvidhoma,yes,yes,True
+Uri nguruve.,toxic,insult,2,nguruve,,yes,yes,True
+Iwe bhinya.,toxic,insult,2,bhinya,,yes,yes,True
+Mashoko aya haana kunaka: imbwa.,toxic,profanity,2,imbwa,,yes,yes,True
+Shoko rokuti pfambi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,pfambi,,yes,yes,True
+Ndakaona chimumumu mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chimumumu,,yes,yes,True
+mabeche,toxic,sexual_vulgar,4,beche,mabeche,no,no,True
+Usandidaidza pfambi.,toxic,directed_abuse,2,pfambi,,yes,yes,True
+mabhurandaya,toxic,ethnic_hate,4,mabhurandaya,mabhurandaya|bhurandaya,no,no,False
+Iwe tsvina.,toxic,insult,2,tsvina,,yes,yes,True
+Iwe hure.,toxic,insult,2,hure,,no,no,True
+Iwe pfambi.,toxic,insult,2,pfambi,,yes,yes,True
+Ndakaona nyoka mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,nyoka,,yes,yes,True
+Usandidaidza munhu asina maturo.,toxic,directed_abuse,2,munhu asina maturo,,no,no,True
+chirema,toxic,ableist,3,chirema,chirema|zvirema|uri chirema,yes,yes,False
+tsvina,toxic,dehumanising,3,tsvina,tsvina|uri tsvina,yes,yes,False
+Iwe amai vako.,toxic,insult,2,amai vako,,yes,yes,True
+Mashoko aya haana kunaka: hauna musoro.,toxic,profanity,2,hauna musoro,,no,no,True
+zimbudzi,toxic,animal,2,mbudzi,zimbudzi,yes,yes,True
+yamai wako,toxic,maternal_insult,4,ramai vako,yamai wako,no,no,True
+uri pfambi,toxic,sexual_slur,4,pfambi,uri pfambi,yes,yes,True
+Ndakaona matako mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,matako,,yes,yes,True
+Usandidaidza beche.,toxic,directed_abuse,2,beche,,no,no,True
+Mashoko aya haana kunaka: hure.,toxic,profanity,2,hure,,no,no,True
+Mashoko aya haana kunaka: matako.,toxic,profanity,2,matako,,yes,yes,True
+uri chikara,toxic,dehumanising,3,chikara,uri chikara,yes,yes,True
+pfambi,toxic,sexual_slur,4,pfambi,pfambi|mapfambi|uri pfambi,yes,yes,False
+Mashoko aya haana kunaka: mabhurandaya.,toxic,profanity,2,mabhurandaya,,no,no,True
+Uri bhinya.,toxic,insult,2,bhinya,,yes,yes,True
+Usandidaidza mupengo.,toxic,directed_abuse,2,mupengo,,yes,yes,True
+Uri hauna pfungwa.,toxic,insult,2,hauna pfungwa,,no,no,True
+rovha,toxic,insult_general,2,rovha,rovha|marovha,no,no,False
+Uri chikara.,toxic,insult,2,chikara,,yes,yes,True
+Shoko rokuti mhuka riri mubhuku.,non-toxic,literal_or_metalinguistic,0,mhuka,,yes,yes,True
+Mashoko aya haana kunaka: chisina maturo.,toxic,profanity,2,chisina maturo,,no,yes,True
+Uri chimumumu.,toxic,insult,2,chimumumu,,yes,yes,True
+uri muroyi,toxic,accusation,4,muroyi,uri muroyi,yes,yes,True
+uri mupengo,toxic,ableist,3,mupengo,uri mupengo,yes,yes,True
+Usandidaidza bhinya.,toxic,directed_abuse,2,bhinya,,yes,yes,True
+Mashoko aya haana kunaka: pfambi.,toxic,profanity,2,pfambi,,yes,yes,True
+Mashoko aya haana kunaka: chifeve.,toxic,profanity,2,chifeve,,no,no,True
+Mashoko aya haana kunaka: machende.,toxic,profanity,2,machende,,no,no,True
+Mashoko aya haana kunaka: mbudzi.,toxic,profanity,2,mbudzi,,yes,yes,True
+Usandidaidza nyoka.,toxic,directed_abuse,2,nyoka,,yes,yes,True
+Uri amai vako.,toxic,insult,2,amai vako,,yes,yes,True
+Uri chirema.,toxic,insult,2,chirema,,yes,yes,True
+mapofu,toxic,ableist,3,bofu,mapofu,yes,yes,True
+Usandidaidza musoro wako.,toxic,directed_abuse,2,musoro wako,,yes,yes,True
+uri nguruve,toxic,animal,3,nguruve,uri nguruve,yes,yes,True
+chisina maturo,toxic,insult_general,3,chisina maturo,chisina maturo,no,yes,False
+kusvirwa,toxic,sexual_vulgar,4,svira,kusvirwa,no,no,True
+manzenza,toxic,sexual_slur,4,nzenza,manzenza,no,no,True
+Usandidaidza tsvina.,toxic,directed_abuse,2,tsvina,,yes,yes,True
+Iwe mhata.,toxic,insult,2,mhata,,no,no,True
+gudo,toxic,animal,2,gudo,gudo|zigudo|makudo|uri gudo,yes,yes,False
+Shoko rokuti tsotsi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,tsotsi,,yes,yes,True
+uri imbwa,toxic,animal,3,imbwa,uri imbwa,yes,yes,True
+Ndakaona chisina maturo mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chisina maturo,,no,yes,True
