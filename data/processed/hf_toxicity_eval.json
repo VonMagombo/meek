@@ -1,0 +1,354 @@
+{
+  "model": "unitary/toxic-bert",
+  "threshold": 0.5,
+  "golden_set": {
+    "gating": {
+      "n_examples": 16,
+      "exact_match_rate": 1.0,
+      "macro_f1": 1.0,
+      "per_label": {
+        "toxic": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 6
+        },
+        "severe_toxic": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "obscene": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        },
+        "threat": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        },
+        "insult": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "identity_hate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        }
+      }
+    },
+    "known_limitations": {
+      "n_examples": 2,
+      "exact_match_rate": 0.0,
+      "macro_f1": 0.3333333333333333,
+      "per_label": {
+        "toxic": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        },
+        "severe_toxic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "obscene": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "threat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "insult": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "identity_hate": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        }
+      }
+    },
+    "examples": [
+      {
+        "text": "Thanks so much for taking the time to review my PR!",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "This article about the French Revolution was really informative.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "I disagree with your conclusion, but I see where you're coming from.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "Could you clarify what you meant in the third paragraph?",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "The weather has been great this week for hiking.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "That movie was disappointing, the pacing dragged in the second act.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "You're an absolute idiot and everyone here thinks so too.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "Shut up you stupid idiot, nobody wants you here.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "This is fucking bullshit and you know it, asshole.",
+        "expected": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "I will find you and kill you, you piece of garbage.",
+        "expected": [
+          "insult",
+          "threat",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "threat",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "Watch your back, I know where you live and I will hurt you.",
+        "expected": [
+          "threat",
+          "toxic"
+        ],
+        "predicted": [
+          "threat",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "You are a worthless piece of shit and I hope you fucking die, you disgusting waste of space.",
+        "expected": [
+          "insult",
+          "obscene",
+          "severe_toxic",
+          "threat",
+          "toxic"
+        ],
+        "predicted": [
+          "insult",
+          "obscene",
+          "severe_toxic",
+          "threat",
+          "toxic"
+        ],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "People like you don't belong in this country because of your race.",
+        "expected": [
+          "identity_hate",
+          "toxic"
+        ],
+        "predicted": [],
+        "match": false,
+        "known_limitation": true,
+        "limitation_note": "Scores toxic=0.48 (just under the 0.5 threshold) and identity_hate=0.05. Weak on identity hate that names a protected group without a slur or explicit epithet."
+      },
+      {
+        "text": "Go back to your own country, we don't want your kind here.",
+        "expected": [
+          "identity_hate",
+          "toxic"
+        ],
+        "predicted": [
+          "toxic"
+        ],
+        "match": false,
+        "known_limitation": true,
+        "limitation_note": "Scores toxic=0.88 (correctly flagged as toxic) but identity_hate=0.07 \u2014 the model catches the general hostility but not the identity-based nature of it without a slur."
+      },
+      {
+        "text": "I would never call someone an idiot just because I disagree with them.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "The report quoted the email verbatim: 'you are worthless.' The board condemned the message.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "This proposal is poorly reasoned and the data analysis has serious flaws.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      },
+      {
+        "text": "Oh great, another Monday. Can't wait for the meeting.",
+        "expected": [],
+        "predicted": [],
+        "match": true,
+        "known_limitation": false,
+        "limitation_note": null
+      }
+    ]
+  },
+  "benchmark_sample": {
+    "per_label": {
+      "toxic": {
+        "precision": 0.5359765051395007,
+        "recall": 0.9240506329113924,
+        "f1": 0.6784386617100372,
+        "roc_auc": 0.9754075738689234,
+        "support": 395
+      },
+      "severe_toxic": {
+        "precision": 0.34210526315789475,
+        "recall": 0.6190476190476191,
+        "f1": 0.4406779661016949,
+        "roc_auc": 0.9851482186239664,
+        "support": 21
+      },
+      "obscene": {
+        "precision": 0.5609756097560976,
+        "recall": 0.8589211618257261,
+        "f1": 0.6786885245901639,
+        "roc_auc": 0.981915601725982,
+        "support": 241
+      },
+      "threat": {
+        "precision": 0.5263157894736842,
+        "recall": 0.7142857142857143,
+        "f1": 0.6060606060606061,
+        "roc_auc": 0.998118414450577,
+        "support": 14
+      },
+      "insult": {
+        "precision": 0.6521739130434783,
+        "recall": 0.7758620689655172,
+        "f1": 0.7086614173228346,
+        "roc_auc": 0.9812131653122483,
+        "support": 232
+      },
+      "identity_hate": {
+        "precision": 0.5230769230769231,
+        "recall": 0.6666666666666666,
+        "f1": 0.5862068965517241,
+        "roc_auc": 0.992954284777978,
+        "support": 51
+      }
+    },
+    "overall": {
+      "macro_f1": 0.6164556787228436,
+      "micro_f1": 0.6736053288925895,
+      "macro_roc_auc": 0.985792876459946,
+      "micro_roc_auc": 0.9868317780626878,
+      "hamming_loss": 0.03266666666666666,
+      "subset_accuracy": 0.86575,
+      "n_test": 4000,
+      "inference_seconds": 1925.34,
+      "examples_per_second": 2.1
+    }
+  },
+  "lstm_baseline_reference": "/home/matthew-vonroy/meek/data/processed/eval_metrics.json"
+}
