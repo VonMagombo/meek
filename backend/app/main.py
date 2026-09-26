@@ -1,12 +1,20 @@
 import os
+import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parents[2]
+_BACKEND = Path(__file__).resolve().parents[1]
+for _p in (_ROOT, _BACKEND):
+    if str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app.api.routes import router
+
 from app.core.config import get_settings
 from app.services import moderation_service
 
