@@ -1,37 +1,37 @@
 {
   "silver_test": {
     "n_examples": 100,
-    "macro_f1": 0.36381175929563025,
-    "micro_f1": 0.5220338983050847,
+    "macro_f1": 0.3966050477908533,
+    "micro_f1": 0.47491638795986624,
     "per_label": {
       "toxic": {
-        "precision": 0.7209302325581395,
-        "recall": 0.6458333333333334,
-        "f1": 0.6813186813186813,
+        "precision": 0.7428571428571429,
+        "recall": 0.5416666666666666,
+        "f1": 0.6265060240963856,
         "support": 48
       },
       "severe_toxic": {
-        "precision": 0.6,
-        "recall": 0.15,
-        "f1": 0.24,
+        "precision": 0.4166666666666667,
+        "recall": 0.25,
+        "f1": 0.3125,
         "support": 20
       },
       "obscene": {
-        "precision": 0.7307692307692307,
-        "recall": 0.5277777777777778,
-        "f1": 0.6129032258064516,
+        "precision": 0.6923076923076923,
+        "recall": 0.5,
+        "f1": 0.5806451612903226,
         "support": 36
       },
       "threat": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0.45454545454545453,
+        "recall": 0.2777777777777778,
+        "f1": 0.3448275862068966,
         "support": 18
       },
       "insult": {
-        "precision": 0.7058823529411765,
-        "recall": 0.6,
-        "f1": 0.6486486486486487,
+        "precision": 0.6538461538461539,
+        "recall": 0.425,
+        "f1": 0.5151515151515151,
         "support": 40
       },
       "identity_hate": {
@@ -43,26 +43,26 @@
     }
   },
   "native_test": {
-    "n_examples": 36,
-    "macro_f1": 0.5413043478260869,
-    "micro_f1": 0.90625,
+    "n_examples": 65,
+    "macro_f1": 0.6357190324295587,
+    "micro_f1": 0.8905109489051095,
     "per_label": {
       "toxic": {
-        "precision": 1.0,
+        "precision": 0.8823529411764706,
         "recall": 1.0,
-        "f1": 1.0,
+        "f1": 0.9375,
         "support": 30
       },
       "severe_toxic": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444444,
         "support": 5
       },
       "obscene": {
-        "precision": 1.0,
-        "recall": 0.6,
-        "f1": 0.75,
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578947,
         "support": 10
       },
       "threat": {
@@ -72,9 +72,9 @@
         "support": 0
       },
       "insult": {
-        "precision": 0.9166666666666666,
-        "recall": 1.0,
-        "f1": 0.9565217391304348,
+        "precision": 0.9545454545454546,
+        "recall": 0.9545454545454546,
+        "f1": 0.9545454545454546,
         "support": 22
       },
       "identity_hate": {
@@ -87,8 +87,8 @@
   },
   "golden_set": {
     "n_examples": 18,
-    "macro_f1": 0.31,
-    "micro_f1": 0.5185185185185185,
+    "macro_f1": 0.43428571428571433,
+    "micro_f1": 0.5925925925925926,
     "per_label": {
       "toxic": {
         "precision": 1.0,
@@ -109,15 +109,15 @@
         "support": 4
       },
       "threat": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
         "support": 3
       },
       "insult": {
         "precision": 1.0,
-        "recall": 0.6,
-        "f1": 0.75,
+        "recall": 0.4,
+        "f1": 0.5714285714285714,
         "support": 5
       },
       "identity_hate": {
@@ -189,9 +189,7 @@
           "obscene",
           "toxic"
         ],
-        "predicted": [
-          "toxic"
-        ],
+        "predicted": [],
         "known_limitation": false
       },
       {
@@ -203,7 +201,6 @@
           "toxic"
         ],
         "predicted": [
-          "insult",
           "toxic"
         ],
         "known_limitation": false
@@ -218,7 +215,7 @@
         ],
         "predicted": [
           "insult",
-          "obscene",
+          "threat",
           "toxic"
         ],
         "known_limitation": false
@@ -230,7 +227,10 @@
           "threat",
           "toxic"
         ],
-        "predicted": [],
+        "predicted": [
+          "threat",
+          "toxic"
+        ],
         "known_limitation": false
       },
       {

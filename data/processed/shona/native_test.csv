@@ -1,37 +1,66 @@
 comment_text_en,comment_text_sn,toxic,severe_toxic,obscene,threat,insult,identity_hate,source
+,Kana tichibatana hapana chakaoma chinogona kutikunda.,0,0,0,0,0,0,native_conversational_clean
+,Takaenda nezuro,0,0,0,0,0,0,native_conversational_clean
 ,Iwe hauna pfungwa.,1,0,0,0,1,0,native_lexicon
-,Mashoko aya haana kunaka: nyoka.,1,0,1,0,0,0,native_lexicon
-,Ndakaona mbudzi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,iwe benzi,1,0,0,0,1,0,native_lexicon
-,Uri hwai.,1,0,0,0,1,0,native_lexicon
+,Tiri kuenda kuchitoro kunotenga zvokudya.,0,0,0,0,0,0,native_conversational_clean
 ,beche,1,1,1,0,0,0,native_lexicon
-,Shoko rokuti imbwa riri mubhuku.,0,0,0,0,0,0,native_lexicon
-,Iwe benzi.,1,0,0,0,1,0,native_lexicon
-,Usandidaidza tsvina yemunhu.,1,0,0,0,1,0,native_lexicon
-,makwai,1,0,0,0,1,0,native_lexicon
-,uri dhongi,1,0,0,0,1,0,native_lexicon
-,mambavha,1,0,0,0,1,0,native_lexicon
-,mapengo,1,0,0,0,1,0,native_lexicon
-,mai vako,1,0,0,0,1,0,native_lexicon
-,bhurandaya,1,1,0,0,1,1,native_lexicon
-,Uri munhu asina maturo.,1,0,0,0,1,0,native_lexicon
+,Maita basa shamwari,0,0,0,0,0,0,native_conversational_clean
 ,Uri mutorwa.,1,0,0,0,1,0,native_lexicon
-,Usandidaidza mutengesi.,1,0,0,0,1,0,native_lexicon
-,Uri tsvina.,1,0,0,0,1,0,native_lexicon
-,Mashoko aya haana kunaka: benzi.,1,0,1,0,0,0,native_lexicon
-,Mashoko aya haana kunaka: bofu.,1,0,1,0,0,0,native_lexicon
-,Ndakaona muroyi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,Mashoko aya haana kunaka: chidhoma.,1,0,1,0,0,0,native_lexicon
-,Uri mabhurandaya.,1,0,0,0,1,0,native_lexicon
-,Mashoko aya haana kunaka: tsotsi.,1,0,1,0,0,0,native_lexicon
-,Mashoko aya haana kunaka: svira.,1,0,1,0,0,0,native_lexicon
-,uri mhuka,1,0,0,0,1,0,native_lexicon
-,Ndakaona tsvina mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,Ndakaona mbavha mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,Usandidaidza hauna pfungwa.,1,0,0,0,1,0,native_lexicon
+,mapengo,1,0,0,0,1,0,native_lexicon
+,Kutaura zvakanaka,0,0,0,0,0,0,native_conversational_clean
 ,zinguruve,1,0,0,0,1,0,native_lexicon
-,zvifeve,1,1,1,0,1,0,native_lexicon
-,Uri chidhoma.,1,0,0,0,1,0,native_lexicon
 ,ramai wako,1,1,1,0,1,0,native_lexicon
+,makwai,1,0,0,0,1,0,native_lexicon
+,mvura,0,0,0,0,0,0,native_conversational_clean
+,mai vako,1,0,0,0,1,0,native_lexicon
 ,Ndakaona mutengesi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Mashoko aya haana kunaka: svira.,1,0,1,0,0,0,native_lexicon
+,iwe benzi,1,0,0,0,1,0,native_lexicon
+,Usandidaidza mutengesi.,1,0,0,0,1,0,native_lexicon
+,shamwari,0,0,0,0,0,0,native_conversational_clean
+,Usandidaidza tsvina yemunhu.,1,0,0,0,1,0,native_lexicon
+,Shoko rokuti imbwa riri mubhuku.,0,0,0,0,0,0,native_lexicon
+,Mvura inotonhorera,0,0,0,0,0,0,native_conversational_clean
+,Uri hwai.,1,0,0,0,1,0,native_lexicon
+,Chirongwa chemubatanidzwa ichi chichabatsira nharaunda yose.,0,0,0,0,0,0,native_conversational_clean
+,Mangwanani akanaka shamwari yangu,0,0,0,0,0,0,native_conversational_clean
+,Mashoko aya haana kunaka: benzi.,1,0,1,0,0,0,native_lexicon
+,Tese tiri pano kuti tibatsirane nekusimbisana mukufamba.,0,0,0,0,0,0,native_conversational_clean
+,tenda,0,0,0,0,0,0,native_conversational_clean
+,Maita basa chaizvo uye muve nevhiki rakanaka kwazvo.,0,0,0,0,0,0,native_conversational_clean
+,Tine chivimbo chokuti zvirongwa zvedu zvichabudirira.,0,0,0,0,0,0,native_conversational_clean
+,zvifeve,1,1,1,0,1,0,native_lexicon
+,jira,0,0,0,0,0,0,native_conversational_clean
+,Upenyu hwakanaka,0,0,0,0,0,0,native_conversational_clean
+,Uri munhu asina maturo.,1,0,0,0,1,0,native_lexicon
+,Ndakaona tsvina mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,uri mhuka,1,0,0,0,1,0,native_lexicon
+,Mashoko aya haana kunaka: tsotsi.,1,0,1,0,0,0,native_lexicon
+,Baba vakaenda kubasa mangwanani ano.,0,0,0,0,0,0,native_conversational_clean
+,mambavha,1,0,0,0,1,0,native_lexicon
+,Uri chidhoma.,1,0,0,0,1,0,native_lexicon
+,Ndiri pano,0,0,0,0,0,0,native_conversational_clean
+,Mhuri yedu iri kufara zvikuru kusangana nemi.,0,0,0,0,0,0,native_conversational_clean
+,Ndeipi,0,0,0,0,0,0,native_conversational_clean
+,Usandidaidza hauna pfungwa.,1,0,0,0,1,0,native_lexicon
+,hope,0,0,0,0,0,0,native_conversational_clean
+,Ndinoda kupa rumbidzo kune vose vakashanda nesimba.,0,0,0,0,0,0,native_conversational_clean
+,Mashoko aya haana kunaka: nyoka.,1,0,1,0,0,0,native_lexicon
+,Ndakaona muroyi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Ndakaona mbudzi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Fambai zvakanaka muve nerwendo rwakanaka uye rwakachengeteka.,0,0,0,0,0,0,native_conversational_clean
+,Iwe mudikanwa wangu,0,0,0,0,0,0,native_conversational_clean
 ,kusvira,1,1,1,0,0,0,native_lexicon
+,Uri mabhurandaya.,1,0,0,0,1,0,native_lexicon
+,Ndinokumbira kuti musarudze runyararo nguva dzose.,0,0,0,0,0,0,native_conversational_clean
+,uri dhongi,1,0,0,0,1,0,native_lexicon
+,Mashoko aya haana kunaka: chidhoma.,1,0,1,0,0,0,native_lexicon
+,Uri tsvina.,1,0,0,0,1,0,native_lexicon
+,Tinofara zvikuru kuva nemunhu akaita sewe pabasa iri.,0,0,0,0,0,0,native_conversational_clean
+,Uri munhu ane mutsa,0,0,0,0,0,0,native_conversational_clean
+,Mashoko aya haana kunaka: bofu.,1,0,1,0,0,0,native_lexicon
+,Iwe benzi.,1,0,0,0,1,0,native_lexicon
+,rwizi,0,0,0,0,0,0,native_conversational_clean
+,bhurandaya,1,1,0,0,1,1,native_lexicon
+,Ndakaona mbavha mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Kugona kutaura mutauro wako chiratidzo chekuzvikudza.,0,0,0,0,0,0,native_conversational_clean

@@ -1,0 +1,288 @@
+text,label,category,severity,source_lemma,surface_variant,has_literal_sense,context_dependent,synthetic
+Mhoro,non-toxic,benign_conversational,0,mhoro,,no,no,False
+Mhoroi,non-toxic,benign_conversational,0,mhoroi,,no,no,False
+Makadii,non-toxic,benign_conversational,0,makadii,,no,no,False
+Wakadii,non-toxic,benign_conversational,0,wakadii,,no,no,False
+Wakadii zvako,non-toxic,benign_conversational,0,wakadii,,no,no,False
+Makadii henyu,non-toxic,benign_conversational,0,makadii,,no,no,False
+Mangwanani,non-toxic,benign_conversational,0,mangwanani,,no,no,False
+Mangwanani akanaka,non-toxic,benign_conversational,0,mangwanani,,no,no,False
+Mangwanani akanaka shamwari yangu,non-toxic,benign_conversational,0,mangwanani,,no,no,False
+Masikati,non-toxic,benign_conversational,0,masikati,,no,no,False
+Masikati akanaka,non-toxic,benign_conversational,0,masikati,,no,no,False
+Manheru,non-toxic,benign_conversational,0,manheru,,no,no,False
+Manheru akanaka,non-toxic,benign_conversational,0,manheru,,no,no,False
+Ndeipi,non-toxic,benign_conversational,0,ndeipi,,no,no,False
+Ndeipi shamwari,non-toxic,benign_conversational,0,ndeipi,,no,no,False
+Zviri sei,non-toxic,benign_conversational,0,zviri sei,,no,no,False
+Zviri nani,non-toxic,benign_conversational,0,zviri nani,,no,no,False
+Tiri kufara,non-toxic,benign_conversational,0,tiri kufara,,no,no,False
+Ndafara kukuona,non-toxic,benign_conversational,0,ndafara,,no,no,False
+Ndafara kusangana newe,non-toxic,benign_conversational,0,ndafara,,no,no,False
+Kwaziwai mose,non-toxic,benign_conversational,0,kwaziwai,,no,no,False
+Ndatenda,non-toxic,benign_conversational,0,ndatenda,,no,no,False
+Ndatenda zvikuru,non-toxic,benign_conversational,0,ndatenda,,no,no,False
+Ndatenda zvikuru nebasa rakanaka,non-toxic,benign_conversational,0,ndatenda,,no,no,False
+Tinotenda,non-toxic,benign_conversational,0,tinotenda,,no,no,False
+Tinotenda zvikuru,non-toxic,benign_conversational,0,tinotenda,,no,no,False
+Tinotenda nerubatsiro rwenyu,non-toxic,benign_conversational,0,tinotenda,,no,no,False
+Maita basa,non-toxic,benign_conversational,0,maita basa,,no,no,False
+Maita basa chaizvo,non-toxic,benign_conversational,0,maita basa,,no,no,False
+Maita basa nekubatsira,non-toxic,benign_conversational,0,maita basa,,no,no,False
+Ndinokutendai,non-toxic,benign_conversational,0,ndinotenda,,no,no,False
+Ndinokutendai nokuda kwokundibetsera,non-toxic,benign_conversational,0,ndinotenda,,no,no,False
+Mwari vakuropafadzei,non-toxic,benign_conversational,0,mwari,,no,no,False
+Mwari vakuitirei zvakanaka,non-toxic,benign_conversational,0,mwari,,no,no,False
+Zvakanaka,non-toxic,benign_conversational,0,zvakanaka,,no,no,False
+Zvakanaka chose,non-toxic,benign_conversational,0,zvakanaka,,no,no,False
+Zvakanaka kwazvo,non-toxic,benign_conversational,0,zvakanaka,,no,no,False
+Basa rakanaka,non-toxic,benign_conversational,0,basa,,no,no,False
+Basa rakanaka iri,non-toxic,benign_conversational,0,basa,,no,no,False
+Uri munhu akanaka,non-toxic,benign_conversational,0,akanaka,,no,no,False
+Uri munhu akanaka chaizvo,non-toxic,benign_conversational,0,akanaka,,no,no,False
+Uri munhu anoshamisa,non-toxic,benign_conversational,0,anoshamisa,,no,no,False
+Uri munhu anoshamisa tinokutendai,non-toxic,benign_conversational,0,anoshamisa,,no,no,False
+Uri munhu akangwara,non-toxic,benign_conversational,0,akangwara,,no,no,False
+Uri shamwari yangu yepamwoyo,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri mwana akanaka,non-toxic,benign_conversational,0,mwana,,no,no,False
+Uri mudzidzisi akanaka,non-toxic,benign_conversational,0,mudzidzisi,,no,no,False
+Uri mushandi ane shingairo,non-toxic,benign_conversational,0,mushandi,,no,no,False
+Uri munhu ane mutsa,non-toxic,benign_conversational,0,mutsa,,no,no,False
+Iwe shamwari yangu,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Iwe mukoma wangu,non-toxic,benign_conversational,0,mukoma,,no,no,False
+Iwe sisi vangu,non-toxic,benign_conversational,0,sisi,,no,no,False
+Iwe mudikanwa wangu,non-toxic,benign_conversational,0,mudikanwa,,no,no,False
+Iwe mudiwa wangu,non-toxic,benign_conversational,0,mudiwa,,no,no,False
+shamwari,non-toxic,benign_conversational,0,shamwari,,no,no,False
+munhu,non-toxic,benign_conversational,0,munhu,,no,no,False
+vanhu,non-toxic,benign_conversational,0,vanhu,,no,no,False
+akanaka,non-toxic,benign_conversational,0,akanaka,,no,no,False
+zvakanaka,non-toxic,benign_conversational,0,zvakanaka,,no,no,False
+basa,non-toxic,benign_conversational,0,basa,,no,no,False
+zuva,non-toxic,benign_conversational,0,zuva,,no,no,False
+mufaro,non-toxic,benign_conversational,0,mufaro,,no,no,False
+imba,non-toxic,benign_conversational,0,imba,,no,no,False
+vana,non-toxic,benign_conversational,0,vana,,no,no,False
+amai,non-toxic,benign_conversational,0,amai,,no,no,False
+baba,non-toxic,benign_conversational,0,baba,,no,no,False
+hama,non-toxic,benign_conversational,0,hama,,no,no,False
+chikoro,non-toxic,benign_conversational,0,chikoro,,no,no,False
+mota,non-toxic,benign_conversational,0,mota,,no,no,False
+nyika,non-toxic,benign_conversational,0,nyika,,no,no,False
+mutauro,non-toxic,benign_conversational,0,mutauro,,no,no,False
+mvura,non-toxic,benign_conversational,0,mvura,,no,no,False
+munda,non-toxic,benign_conversational,0,munda,,no,no,False
+chingwa,non-toxic,benign_conversational,0,chingwa,,no,no,False
+sadza,non-toxic,benign_conversational,0,sadza,,no,no,False
+nguva,non-toxic,benign_conversational,0,nguva,,no,no,False
+chokwadi,non-toxic,benign_conversational,0,chokwadi,,no,no,False
+rudo,non-toxic,benign_conversational,0,rudo,,no,no,False
+runyararo,non-toxic,benign_conversational,0,runyararo,,no,no,False
+chiedza,non-toxic,benign_conversational,0,chiedza,,no,no,False
+miti,non-toxic,benign_conversational,0,miti,,no,no,False
+maruva,non-toxic,benign_conversational,0,maruva,,no,no,False
+mombe,non-toxic,benign_conversational,0,mombe,,no,no,False
+huku,non-toxic,benign_conversational,0,huku,,no,no,False
+bhuku,non-toxic,benign_conversational,0,bhuku,,no,no,False
+tsamba,non-toxic,benign_conversational,0,tsamba,,no,no,False
+rwiyo,non-toxic,benign_conversational,0,rwiyo,,no,no,False
+rwizi,non-toxic,benign_conversational,0,rwizi,,no,no,False
+gomo,non-toxic,benign_conversational,0,gomo,,no,no,False
+hope,non-toxic,benign_conversational,0,hope,,no,no,False
+mhepo,non-toxic,benign_conversational,0,mhepo,,no,no,False
+jira,non-toxic,benign_conversational,0,jira,,no,no,False
+bhora,non-toxic,benign_conversational,0,bhora,,no,no,False
+mutambo,non-toxic,benign_conversational,0,mutambo,,no,no,False
+tsika,non-toxic,benign_conversational,0,tsika,,no,no,False
+nhumbi,non-toxic,benign_conversational,0,nhumbi,,no,no,False
+nzira,non-toxic,benign_conversational,0,nzira,,no,no,False
+moto,non-toxic,benign_conversational,0,moto,,no,no,False
+Urikuenda kupi nhasi?,non-toxic,benign_conversational,0,kuenda,,no,no,False
+Tiri kuenda kuchitoro kunotenga zvokudya.,non-toxic,benign_conversational,0,chitoro,,no,no,False
+Ndinoda kudzidza mutauro wechiShona zvakadzama.,non-toxic,benign_conversational,0,kudzidza,,no,no,False
+Zuva riri kupisa zvakanyanya nhasi.,non-toxic,benign_conversational,0,zuva,,no,no,False
+Mhuri yedu iri kufara zvikuru kusangana nemi.,non-toxic,benign_conversational,0,mhuri,,no,no,False
+Chirongwa chino chakanakira vana vose vari kudzidza.,non-toxic,benign_conversational,0,chirongwa,,no,no,False
+Tiri kushanda pamwe chete kuti tipedze basa iri nenguva.,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Ndinokumbirawo rubatsiro rwenyu pane izvi.,non-toxic,benign_conversational,0,rubatsiro,,no,no,False
+Mvura iri kunaya zvakanaka gore rino muminda yose.,non-toxic,benign_conversational,0,mvura,,no,no,False
+Ndinotenda nokuda kwerwiyo rwenyu rwakanaka.,non-toxic,benign_conversational,0,rwiyo,,no,no,False
+Vadzidzi vari kuverenga mabhuku mukirasi.,non-toxic,benign_conversational,0,kuverenga,,no,no,False
+Amai vari kubika sadza rinonaka kumba.,non-toxic,benign_conversational,0,kubika,,no,no,False
+Baba vakaenda kubasa mangwanani ano.,non-toxic,benign_conversational,0,basa,,no,no,False
+Hanzvadzi yangu iri kudzidza kuyunivhesiti.,non-toxic,benign_conversational,0,kudzidza,,no,no,False
+Guta reHarare rine vanhu vazhinji vanoshanda nesimba.,non-toxic,benign_conversational,0,vanhu,,no,no,False
+Takafamba rwendo rurefu tichiyambuka rwizi.,non-toxic,benign_conversational,0,rwendo,,no,no,False
+Chirimo chino tarisiro yegoho rakanaka iripo.,non-toxic,benign_conversational,0,goho,,no,no,False
+Ndinoda kutenda vanhu vose vakauya kumusangano.,non-toxic,benign_conversational,0,kutenda,,no,no,False
+Vana vari kutamba bhora panze mushure mechikoro.,non-toxic,benign_conversational,0,kutamba,,no,no,False
+Chikafu chino chakanaka chose uye chinopa utano.,non-toxic,benign_conversational,0,chikafu,,no,no,False
+Mazuva ano tiri kuona budiriro huru munyika yedu.,non-toxic,benign_conversational,0,budiriro,,no,no,False
+Zvose zviri kufamba zvakanaka sezvatakaronga.,non-toxic,benign_conversational,0,kuronga,,no,no,False
+Ndinoshuva kuti uve nezuva rakanaka uye rine mufaro.,non-toxic,benign_conversational,0,mufaro,,no,no,False
+Mhuri inokosha zvikuru muupenyu hwomunhu wose.,non-toxic,benign_conversational,0,upenyu,,no,no,False
+Ndinoremekedza maonero enyu panyaya iyi.,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
+Tichasangana zvakare svondo rinouya.,non-toxic,benign_conversational,0,kusangana,,no,no,False
+Rudo runokunda zvinhu zvose munyika.,non-toxic,benign_conversational,0,rudo,,no,no,False
+Chokwadi chinobudisa pachena zviitiko zvose.,non-toxic,benign_conversational,0,chokwadi,,no,no,False
+Tinofanira kuchengetedza zviwanikwa zvomunyika yedu.,non-toxic,benign_conversational,0,kuchengetedza,,no,no,False
+Ndinokumbira ruregerero kana ndakakutadzira.,non-toxic,benign_conversational,0,ruregerero,,no,no,False
+Upenyu hune zvakawanda zvokudzidza zuva nezuva.,non-toxic,benign_conversational,0,kudzidza,,no,no,False
+Tiri kuteerera kutaura kwakanaka kwemutungamiri.,non-toxic,benign_conversational,0,kuteerera,,no,no,False
+Chirongwa chemubatanidzwa ichi chichabatsira nharaunda yose.,non-toxic,benign_conversational,0,nharaunda,,no,no,False
+Ndinoda kupa rumbidzo kune vose vakashanda nesimba.,non-toxic,benign_conversational,0,rumbidzo,,no,no,False
+Mwoyo murefu unounza rugare mumusha.,non-toxic,benign_conversational,0,rugare,,no,no,False
+Zvakanaka kuva nemwoyo unotenda pane zvose.,non-toxic,benign_conversational,0,kutenda,,no,no,False
+Mwari vakomborere basa riri kuitwa nevanhu ava.,non-toxic,benign_conversational,0,basa,,no,no,False
+Ndinofadzwa zvikuru neushingi hwenyu.,non-toxic,benign_conversational,0,ushingi,,no,no,False
+Ndinokutendai chose nokuda kwenguva yenyu.,non-toxic,benign_conversational,0,nguva,,no,no,False
+Pamusoroi ndinogona kubvunzawo mubvunzo here?,non-toxic,benign_conversational,0,pamusoroi,,no,no,False
+Hongu unogona kubvunza zvose zvaunoda kuziva.,non-toxic,benign_conversational,0,hongu,,no,no,False
+Tinofara kuva newe muchikwata chedu.,non-toxic,benign_conversational,0,chikwata,,no,no,False
+Basa iri riri kufambira mberi zvakanaka kwazvo.,non-toxic,benign_conversational,0,basa,,no,no,False
+Mvura yakachena inokosha zvikuru pahutano hwedu.,non-toxic,benign_conversational,0,hutano,,no,no,False
+Zuva ranhasi rakasiyana nemamwe nokuti rine makomborero.,non-toxic,benign_conversational,0,makomborero,,no,no,False
+Ndinodada zvikuru nebudiriro yenyu pabasa.,non-toxic,benign_conversational,0,kudada,,no,no,False
+Zviri pachena kuti wakaronga zvese nenzira yakanaka.,non-toxic,benign_conversational,0,kuronga,,no,no,False
+Mhuri yose yakasangana pamutambo womuchato.,non-toxic,benign_conversational,0,muchato,,no,no,False
+Rugare runotanga mumwoyo wemunhu wega wega.,non-toxic,benign_conversational,0,rugare,,no,no,False
+Kushandira pamwe kunounza budiriro kune vose.,non-toxic,benign_conversational,0,kushandira,,no,no,False
+Ungandibatsirawo here kutsvaga nzira yekuenda kuchiteshi?,non-toxic,benign_conversational,0,kubatsira,,no,no,False
+Ndinotenda nokuda kwekutsungirira kwenyu mukati memiedzo.,non-toxic,benign_conversational,0,kutsungirira,,no,no,False
+Mibvunzo yenyu ine musoro uye yakadzama chaizvo.,non-toxic,benign_conversational,0,musoro,,no,no,False
+Tine chivimbo chokuti zvirongwa zvedu zvichabudirira.,non-toxic,benign_conversational,0,chivimbo,,no,no,False
+Kutenda chinhu chakanaka chinovaka hukama hwakanaka.,non-toxic,benign_conversational,0,hukama,,no,no,False
+Upenyu ihurukuro inovakwa nekuremekedzana zuva roga roga.,non-toxic,benign_conversational,0,kuremekedzana,,no,no,False
+Tiri kutarisira kuona zvibereko zvinofadza kubva mubasa iri.,non-toxic,benign_conversational,0,zvibereko,,no,no,False
+Ndafara zvikuru nokugovana pfungwa idzi nemi nhasi.,non-toxic,benign_conversational,0,pfungwa,,no,no,False
+Maita basa kwazvo nekuda kwetsigiro yenyu isingazungunuki.,non-toxic,benign_conversational,0,tsigiro,,no,no,False
+Chikoro ichi chine mukurumbira wekupa dzidzo yepamusoro.,non-toxic,benign_conversational,0,dzidzo,,no,no,False
+Vana vanofanira kudzidziswa tsika dzechinyakare dzekuremekedza.,non-toxic,benign_conversational,0,tsika,,no,no,False
+Zvakakosha kuteerera kune vamwe kana vachitaura maonero avo.,non-toxic,benign_conversational,0,kuteerera,,no,no,False
+Kugona kutaura mutauro wako chiratidzo chekuzvikudza.,non-toxic,benign_conversational,0,mutauro,,no,no,False
+Ndinoshuvira munhu wose rugare nemufaro mukati medzimba dzavo.,non-toxic,benign_conversational,0,rugare,,no,no,False
+Ndatenda chaizvo nekunditeerera pamusoro penyaya iyi.,non-toxic,benign_conversational,0,kuteerera,,no,no,False
+Tiri kuronga misangano inobatsira kusimudzira nharaunda dzedu.,non-toxic,benign_conversational,0,misangano,,no,no,False
+Ndinofara kuti tese tiri kubvumirana pane zvirongwa izvi.,non-toxic,benign_conversational,0,kubvumirana,,no,no,False
+Kukurukura kwedu kwanhasi kwave kune zvibereko zvakanaka.,non-toxic,benign_conversational,0,kukurukura,,no,no,False
+Fambai zvakanaka muve nerwendo rwakanaka uye rwakachengeteka.,non-toxic,benign_conversational,0,kufamba,,no,no,False
+Tinotarisira kukuonai zvakare munguva pfupi iri kutevera.,non-toxic,benign_conversational,0,kuona,,no,no,False
+Ndinotenda zvikuru nemoyo wenyu wakanaka wamaratidza pano.,non-toxic,benign_conversational,0,moyo,,no,no,False
+Maita basa chaizvo nenguva yamatora kuti mutsanangure izvi.,non-toxic,benign_conversational,0,nguva,,no,no,False
+Ndinokumbira kuti тиrambe tichibatana mukushanda kwedu kwose.,non-toxic,benign_conversational,0,kubatana,,no,no,False
+Zviri nani kutaura zvakanaka pane kutaura mashoko anokuvadza.,non-toxic,benign_conversational,0,mashoko,,no,no,False
+Chiedza chezuva chinounza mufaro kune zvisikwa zvose.,non-toxic,benign_conversational,0,chiedza,,no,no,False
+Tinofara zvikuru nokuda kwezvirongwa zviri kubatsira veruzhinji.,non-toxic,benign_conversational,0,veruzhinji,,no,no,False
+Kana tichibatana hapana chakaoma chinogona kutikunda.,non-toxic,benign_conversational,0,kubatana,,no,no,False
+Ndinotenda nokuda kwekugovana ruzivo urwu runobatsira zvikuru.,non-toxic,benign_conversational,0,ruzivo,,no,no,False
+Mwari vaitire nyasha mhuri dzose dziri mumatambudziko.,non-toxic,benign_conversational,0,nyasha,,no,no,False
+Kushanda zvakanaka kunounza mufaro mukuru pamwoyo.,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Muve nenguva inofadza nevadiwa venyu pazuva ranhasi.,non-toxic,benign_conversational,0,vadiwa,,no,no,False
+Ndinotenda zvikuru neruremekedzo rwuripo pakati pedu.,non-toxic,benign_conversational,0,ruremekedzo,,no,no,False
+Iyi inyaya inofadza zvikuru yandinofarira kuverenga.,non-toxic,benign_conversational,0,kuverenga,,no,no,False
+Ndinokutendai chose nokuda kwechipo chenyu chakanaka.,non-toxic,benign_conversational,0,chipo,,no,no,False
+Mudzidzisi wedu ane rudo rukuru nevana vechikoro.,non-toxic,benign_conversational,0,rudo,,no,no,False
+Zuva roga roga mukana mutsva wekuita zvakanaka muupenyu.,non-toxic,benign_conversational,0,mukana,,no,no,False
+Tinoda kukutendai nokuda kwemwoyo murefu wamakaratidza.,non-toxic,benign_conversational,0,kutsungirira,,no,no,False
+Kutaura chokwadi kunosunungura pfungwa dzedu nguva dzose.,non-toxic,benign_conversational,0,chokwadi,,no,no,False
+Ndinofadzwa nekuona vana vachidzidza zvine mufaro mukuru.,non-toxic,benign_conversational,0,mufaro,,no,no,False
+Ndinokumbira kuti musarudze runyararo nguva dzose.,non-toxic,benign_conversational,0,runyararo,,no,no,False
+Tinotenda zvikuru nemafungiro enyu akanaka anovaka.,non-toxic,benign_conversational,0,mafungiro,,no,no,False
+Tese tiri pano kuti tibatsirane nekusimbisana mukufamba.,non-toxic,benign_conversational,0,kubatsirana,,no,no,False
+Ndafara zvikuru nehurukuro yakanaka iyi yatave nayo.,non-toxic,benign_conversational,0,hurukuro,,no,no,False
+Maita basa chaizvo uye muve nevhiki rakanaka kwazvo.,non-toxic,benign_conversational,0,vhiki,,no,no,False
+Ndinotenda nokuda kwekutungamira kwenyu kwakanaka kwazvo.,non-toxic,benign_conversational,0,kutungamira,,no,no,False
+Ramba wakashinga pane zvese zvaunoita zvakanaka.,non-toxic,benign_conversational,0,kushinga,,no,no,False
+Kutenda kunounza makomborero akawanda kune anotenda.,non-toxic,benign_conversational,0,makomborero,,no,no,False
+Iwe wakakosha zvikuru kumhuri yako uye kushamwari dzako.,non-toxic,benign_conversational,0,kukosha,,no,no,False
+Ndinokuda kwazvo amai vangu munhu wakanaka.,non-toxic,benign_conversational,0,kuda,,no,no,False
+Baba vangu vanoshanda zvakanaka kuriritira mhuri.,non-toxic,benign_conversational,0,baba,,no,no,False
+Vana vedu vane ramangwana rakanaka riri mberi kwavo.,non-toxic,benign_conversational,0,ramangwana,,no,no,False
+Tiri kufara zvikuru nekuzadzikiswa kwezvirongwa izvi.,non-toxic,benign_conversational,0,kufara,,no,no,False
+Maita basa zvikuru nemhinduro yenyu inobatsira.,non-toxic,benign_conversational,0,mhinduro,,no,no,False
+Ndinokutendai chose nenguva yamakandipa nhasi.,non-toxic,benign_conversational,0,nguva,,no,no,False
+Mazuva ese tinofanira kutsvaga zvinhu zvinovaka rugare.,non-toxic,benign_conversational,0,rugare,,no,no,False
+Ndinoshuvira mose kubudirira mune zvose zvamunoita.,non-toxic,benign_conversational,0,kubudirira,,no,no,False
+Kuva nemwoyo muchena kunofadza munhu wese anokuziva.,non-toxic,benign_conversational,0,muchena,,no,no,False
+Tinofara zvikuru kuva nemunhu akaita sewe pabasa iri.,non-toxic,benign_conversational,0,munhu,,no,no,False
+Maita basa nerutsigiro rwenyu runokosha zvikuru.,non-toxic,benign_conversational,0,rutsigiro,,no,no,False
+Ndinotenda chaizvo nekubatsira kwamakaita vanhu ava.,non-toxic,benign_conversational,0,kubatsira,,no,no,False
+Tine tariro huru yekuti zvinhu zvichanaka mberi.,non-toxic,benign_conversational,0,tariro,,no,no,False
+Ndinoremekedza zvikuru pfungwa dzenyu dzekuvaka idzi.,non-toxic,benign_conversational,0,pfungwa,,no,no,False
+Kana tichidanana tinokwanisa kukunda zvipingamupinyi zvese.,non-toxic,benign_conversational,0,kudanana,,no,no,False
+Tinotenda chose nekuda kwerupo rwenyu rwakakura kudai.,non-toxic,benign_conversational,0,rupo,,no,no,False
+Ndinofadzwa nekuona vanhu vachidyidzana murunyararo.,non-toxic,benign_conversational,0,runyararo,,no,no,False
+Mwari vatungamire matanho enyu ose mune zvamunoita.,non-toxic,benign_conversational,0,matanho,,no,no,False
+Upenyu chipo chinokosha chatinofanira kuchengetedza.,non-toxic,benign_conversational,0,chipo,,no,no,False
+Ndatenda zvikuru kune vose vakatora chikamu nhasi.,non-toxic,benign_conversational,0,chikamu,,no,no,False
+Maita basa chose uye muve nezororo rakanaka.,non-toxic,benign_conversational,0,zororo,,no,no,False
+famba,non-toxic,benign_conversational,0,famba,,no,no,False
+tamba,non-toxic,benign_conversational,0,tamba,,no,no,False
+bika,non-toxic,benign_conversational,0,bika,,no,no,False
+nyora,non-toxic,benign_conversational,0,nyora,,no,no,False
+verenga,non-toxic,benign_conversational,0,verenga,,no,no,False
+seka,non-toxic,benign_conversational,0,seka,,no,no,False
+fara,non-toxic,benign_conversational,0,fara,,no,no,False
+simuka,non-toxic,benign_conversational,0,simuka,,no,no,False
+gara,non-toxic,benign_conversational,0,gara,,no,no,False
+kura,non-toxic,benign_conversational,0,kura,,no,no,False
+muka,non-toxic,benign_conversational,0,muka,,no,no,False
+batsira,non-toxic,benign_conversational,0,batsira,,no,no,False
+dzidza,non-toxic,benign_conversational,0,dzidza,,no,no,False
+shanda,non-toxic,benign_conversational,0,shanda,,no,no,False
+tenga,non-toxic,benign_conversational,0,tenga,,no,no,False
+tengesa,non-toxic,benign_conversational,0,tengesa,,no,no,False
+rara,non-toxic,benign_conversational,0,rara,,no,no,False
+imba,non-toxic,benign_conversational,0,imba,,no,no,False
+tenda,non-toxic,benign_conversational,0,tenda,,no,no,False
+kumbira,non-toxic,benign_conversational,0,kumbira,,no,no,False
+muchena,non-toxic,benign_conversational,0,muchena,,no,no,False
+mutema,non-toxic,benign_conversational,0,mutema,,no,no,False
+mukuru,non-toxic,benign_conversational,0,mukuru,,no,no,False
+mudiki,non-toxic,benign_conversational,0,mudiki,,no,no,False
+murefu,non-toxic,benign_conversational,0,murefu,,no,no,False
+mupfupi,non-toxic,benign_conversational,0,mupfupi,,no,no,False
+mutsva,non-toxic,benign_conversational,0,mutsva,,no,no,False
+mutsvuku,non-toxic,benign_conversational,0,mutsvuku,,no,no,False
+chakanaka,non-toxic,benign_conversational,0,chakanaka,,no,no,False
+rakanaka,non-toxic,benign_conversational,0,rakanaka,,no,no,False
+vakanaka,non-toxic,benign_conversational,0,vakanaka,,no,no,False
+vakuru,non-toxic,benign_conversational,0,vakuru,,no,no,False
+vadiki,non-toxic,benign_conversational,0,vadiki,,no,no,False
+Ndinofara,non-toxic,benign_conversational,0,kufara,,no,no,False
+Uri kumba here?,non-toxic,benign_conversational,0,kumba,,no,no,False
+Ndiri pano,non-toxic,benign_conversational,0,pano,,no,no,False
+Tiri pano,non-toxic,benign_conversational,0,pano,,no,no,False
+Ari kumba,non-toxic,benign_conversational,0,kumba,,no,no,False
+Vari kushanda,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Ndichauya mangwana,non-toxic,benign_conversational,0,kuuya,,no,no,False
+Takaenda nezuro,non-toxic,benign_conversational,0,kuenda,,no,no,False
+Zviri kufamba,non-toxic,benign_conversational,0,kufamba,,no,no,False
+Zvakanaka hama yangu,non-toxic,benign_conversational,0,zvakanaka,,no,no,False
+Ndatenda shamwari,non-toxic,benign_conversational,0,ndatenda,,no,no,False
+Maita basa shamwari,non-toxic,benign_conversational,0,maita basa,,no,no,False
+Ndinokudai mose,non-toxic,benign_conversational,0,kuda,,no,no,False
+Upenyu hwakanaka,non-toxic,benign_conversational,0,upenyu,,no,no,False
+Rugare kwamuri,non-toxic,benign_conversational,0,rugare,,no,no,False
+Tiri vana vamwari,non-toxic,benign_conversational,0,vana,,no,no,False
+Basa redu,non-toxic,benign_conversational,0,basa,,no,no,False
+Chikoro chedu,non-toxic,benign_conversational,0,chikoro,,no,no,False
+Musha wedu,non-toxic,benign_conversational,0,musha,,no,no,False
+Nyika yedu,non-toxic,benign_conversational,0,nyika,,no,no,False
+Mhuri yedu,non-toxic,benign_conversational,0,mhuri,,no,no,False
+Shamwari dzangu,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Hama dzangu,non-toxic,benign_conversational,0,hama,,no,no,False
+Zvokudya zvinonaka,non-toxic,benign_conversational,0,zvokudya,,no,no,False
+Mvura inotonhorera,non-toxic,benign_conversational,0,mvura,,no,no,False
+Zuva rakachena,non-toxic,benign_conversational,0,zuva,,no,no,False
+Mhepo yakanaka,non-toxic,benign_conversational,0,mhepo,,no,no,False
+Rwiyo runonaka,non-toxic,benign_conversational,0,rwiyo,,no,no,False
+Bhora redu,non-toxic,benign_conversational,0,bhora,,no,no,False
+Mutambo wakanaka,non-toxic,benign_conversational,0,mutambo,,no,no,False
+Dzidzo inokosha,non-toxic,benign_conversational,0,dzidzo,,no,no,False
+Kushanda nesimba,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Kuva nerudo,non-toxic,benign_conversational,0,rudo,,no,no,False
+Kuremekedza vamwe,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
+Kuchengetedza mhuri,non-toxic,benign_conversational,0,kuchengetedza,,no,no,False
+Kufara pamwe,non-toxic,benign_conversational,0,kufara,,no,no,False
+Kutaura zvakanaka,non-toxic,benign_conversational,0,kutaura,,no,no,False

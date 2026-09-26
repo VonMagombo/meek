@@ -70,6 +70,7 @@ CATEGORY_LABELS = {
     "sexual_slur": {"toxic", "obscene", "insult"},
     "ethnic_hate": {"toxic", "insult", "identity_hate"},
     "literal_or_metalinguistic": set(),
+    "benign_conversational": set(),
 }
 
 # categories where a severity-4 row also gets obscene (on top of CATEGORY_LABELS)
@@ -110,6 +111,31 @@ def load_native_split(name: str) -> pd.DataFrame:
     return out
 
 
+def load_clean_conversational_splits() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    clean_path = NATIVE_DIR / "clean_conversational.csv"
+    if not clean_path.exists():
+        empty = pd.DataFrame(columns=["comment_text_en", "comment_text_sn"] + LABELS + ["source"])
+        return empty, empty, empty
+
+    df = pd.read_csv(clean_path)
+    train_df = df.sample(frac=0.8, random_state=SEED)
+    rest_df = df.drop(train_df.index)
+    val_df = rest_df.sample(frac=0.5, random_state=SEED)
+    test_df = rest_df.drop(val_df.index)
+
+    def _format(split_df):
+        return pd.DataFrame(
+            {
+                "comment_text_en": "",
+                "comment_text_sn": split_df["text"],
+                **{label: 0 for label in LABELS},
+                "source": "native_conversational_clean",
+            }
+        )
+
+    return _format(train_df), _format(val_df), _format(test_df)
+
+
 def load_silver_split(name: str) -> pd.DataFrame:
     df = pd.read_csv(SILVER_DIR / f"{name}.csv")
     df = df.copy()
@@ -117,17 +143,20 @@ def load_silver_split(name: str) -> pd.DataFrame:
     return df
 
 
-def merge_split(name: str, native_name: str) -> pd.DataFrame:
+def merge_split(name: str, native_name: str, clean_df: pd.DataFrame | None = None) -> pd.DataFrame:
     silver = load_silver_split(name)
     native = load_native_split(native_name)
-    merged = pd.concat([silver, native], ignore_index=True)
+    dfs = [silver, native]
+    if clean_df is not None and not clean_df.empty:
+        dfs.append(clean_df)
+    merged = pd.concat(dfs, ignore_index=True)
     return merged.sample(frac=1, random_state=SEED).reset_index(drop=True)
 
 
 def report_counts(name: str, df: pd.DataFrame) -> None:
-    n_native = (df["source"] == "native_lexicon").sum()
-    n_silver = (df["source"] == "mt_silver").sum()
-    print(f"[{name}] {len(df)} rows total ({n_silver} mt_silver + {n_native} native_lexicon)")
+    counts = df["source"].value_counts().to_dict()
+    sources_str = " + ".join(f"{cnt} {src}" for src, cnt in counts.items())
+    print(f"[{name}] {len(df)} rows total ({sources_str})")
     for label in LABELS:
         print(f"    {label:15s} {int(df[label].sum())}")
 
@@ -138,9 +167,13 @@ def main() -> None:
             print(f"Missing {missing}")
             sys.exit(1)
 
-    train = merge_split("train", "train")
-    val = merge_split("val", "validation")
-    native_test = load_native_split("test")
+    clean_train, clean_val, clean_test = load_clean_conversational_splits()
+
+    train = merge_split("train", "train", clean_train)
+    val = merge_split("val", "validation", clean_val)
+    native_test = pd.concat([load_native_split("test"), clean_test], ignore_index=True).sample(
+        frac=1, random_state=SEED
+    ).reset_index(drop=True)
 
     report_counts("train", train)
     report_counts("val", val)
@@ -152,6 +185,7 @@ def main() -> None:
     native_test.to_csv(OUT_DIR / "native_test.csv", index=False)
     print(f"\nWrote {OUT_DIR / 'train.csv'}, {OUT_DIR / 'val.csv'}, {OUT_DIR / 'native_test.csv'}")
     print("data/processed/shona/test.csv (mt_silver only) left untouched.")
+
 
 
 if __name__ == "__main__":
