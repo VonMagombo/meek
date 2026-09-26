@@ -76,15 +76,52 @@ body {
   color: var(--text-muted);
 }
 
-.lang-row {
+.top-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.lang-row .field-label {
-  margin-bottom: 0;
+.mode-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.mode-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mode-btn:hover {
+  opacity: 1;
+  color: var(--text);
+}
+
+.mode-btn.active {
+  background: var(--text);
+  color: var(--panel);
+}
+
+.mode-btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.lang-row {
+  display: flex;
+  align-items: center;
 }
 
 .lang-toggle {
@@ -98,6 +135,7 @@ body {
 .lang-btn {
   background: transparent;
   color: var(--text-muted);
+
   border: none;
   border-radius: 999px;
   padding: 5px 14px;
@@ -217,7 +255,8 @@ button:focus-visible {
   height: 8px;
   background: var(--track);
   border-radius: 999px;
-  overflow: hidden;
+  position: relative;
+  overflow: visible;
 }
 
 .score-fill {
@@ -225,6 +264,16 @@ button:focus-visible {
   border-radius: 999px;
   background: linear-gradient(90deg, #4c8c6f, #d98c3f 65%, #c0392b);
   transition: width 0.25s ease;
+}
+
+.score-threshold-mark {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--text-muted);
+  border-radius: 1px;
+  z-index: 2;
 }
 
 .score-value {
@@ -236,6 +285,83 @@ button:focus-visible {
 .score-row.is-flagged .score-label {
   font-weight: 700;
 }
+
+.batch-summary {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.batch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.batch-item {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.batch-item.is-toxic {
+  border-color: var(--danger-text);
+  background: var(--danger-bg);
+}
+
+.batch-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.batch-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.batch-badge.clean {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.batch-badge.flagged {
+  background: var(--danger-text);
+  color: #fff;
+}
+
+.batch-text {
+  font-size: 0.92rem;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.batch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.batch-tag {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 
 .error-panel {
   background: var(--danger-bg);

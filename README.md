@@ -100,7 +100,7 @@ paying the cold-start cost).
 `POST /api/v1/moderate`
 ```json
 // request
-{"text": "your comment here", "language": "en"}
+{"text": "your comment here", "language": "auto"}
 
 // response
 {
@@ -109,22 +109,45 @@ paying the cold-start cost).
   "model": "unitary/toxic-bert",
   "scores": {"toxic": 0.98, "severe_toxic": 0.28, "obscene": 0.50, "threat": 0.89, "insult": 0.60, "identity_hate": 0.06},
   "flagged_labels": ["toxic", "threat", "insult"],
-  "is_toxic": true
+  "is_toxic": true,
+  "thresholds_used": {"threat": 0.35, "severe_toxic": 0.35, "identity_hate": 0.40, "toxic": 0.50, "insult": 0.50, "obscene": 0.60}
 }
 ```
 
-`language` is `"en"` (default) or `"sn"` (Shona). If no Shona checkpoint has
-been fine-tuned yet on this deployment, a Shona request returns `503`.
+`POST /api/v1/moderate/batch`
+```json
+// request (up to 100 comments, batched forward passes on CPU)
+{
+  "texts": ["Thanks for the help!", "Shut up you idiot.", "Ndichakuuraya."],
+  "language": "auto"
+}
+
+// response
+{
+  "results": [...],
+  "total": 3,
+  "flagged_count": 2
+}
+```
+
+`language` is `"auto"` (default detection between English and Shona), `"en"`, or `"sn"` (Shona).
+If no Shona checkpoint has been fine-tuned yet on this deployment, a Shona request returns `503`.
+
+Optional per-request threshold overrides:
+Pass `"thresholds": {"threat": 0.25, "toxic": 0.70}` in either request body.
 
 `GET /api/v1/health` → `{"status": "ok", "models": {"en": "unitary/toxic-bert", "sn": "Davlan/xlm-roberta-base-finetuned-shona (fine-tuned)"}}`
 
 Interactive docs at http://localhost:8000/docs (FastAPI's built-in Swagger UI).
 
 Config (env vars, all optional):
-- `MEEK_TOXICITY_THRESHOLD` (default `0.5`) — per-label score cutoff for `flagged_labels`/`is_toxic`.
-- `MEEK_MAX_TEXT_LENGTH` (default `5000`) — max request text length, characters.
+- `MEEK_TOXICITY_THRESHOLD` (default unset) — global fallback score cutoff. When unset, safety-calibrated defaults apply: `threat: 0.35`, `severe_toxic: 0.35`, `identity_hate: 0.40`, `toxic: 0.50`, `insult: 0.50`, `obscene: 0.60`.
+- `MEEK_THRESHOLD_<LABEL>` (e.g. `MEEK_THRESHOLD_THREAT=0.3`) — per-label cutoff override.
+- `MEEK_MAX_TEXT_LENGTH` (default `5000`) — max single request text length, characters.
+- `MEEK_MAX_BATCH_SIZE` (default `100`) — max comments per batch request.
 - `MEEK_CORS_ORIGINS` (default `*`) — comma-separated allowed origins.
-- `MEEK_WARMUP` (default off) — set to `1` to load the model at startup.
+- `MEEK_WARMUP` (default off) — set to `1` to load models at startup.
+
 
 ## Shona support
 

@@ -296,58 +296,58 @@
   "benchmark_sample": {
     "per_label": {
       "toxic": {
-        "precision": 0.5359765051395007,
-        "recall": 0.9240506329113924,
-        "f1": 0.6784386617100372,
-        "roc_auc": 0.9754075738689234,
-        "support": 395
+        "precision": 0.375,
+        "recall": 0.75,
+        "f1": 0.5,
+        "roc_auc": 0.9402173913043479,
+        "support": 4
       },
       "severe_toxic": {
-        "precision": 0.34210526315789475,
-        "recall": 0.6190476190476191,
-        "f1": 0.4406779661016949,
-        "roc_auc": 0.9851482186239664,
-        "support": 21
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": null,
+        "support": 0
       },
       "obscene": {
-        "precision": 0.5609756097560976,
-        "recall": 0.8589211618257261,
-        "f1": 0.6786885245901639,
-        "roc_auc": 0.981915601725982,
-        "support": 241
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "roc_auc": 0.9895833333333333,
+        "support": 2
       },
       "threat": {
-        "precision": 0.5263157894736842,
-        "recall": 0.7142857142857143,
-        "f1": 0.6060606060606061,
-        "roc_auc": 0.998118414450577,
-        "support": 14
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": null,
+        "support": 0
       },
       "insult": {
-        "precision": 0.6521739130434783,
-        "recall": 0.7758620689655172,
-        "f1": 0.7086614173228346,
-        "roc_auc": 0.9812131653122483,
-        "support": 232
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "roc_auc": 0.9791666666666666,
+        "support": 2
       },
       "identity_hate": {
-        "precision": 0.5230769230769231,
-        "recall": 0.6666666666666666,
-        "f1": 0.5862068965517241,
-        "roc_auc": 0.992954284777978,
-        "support": 51
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "support": 1
       }
     },
     "overall": {
-      "macro_f1": 0.6164556787228436,
-      "micro_f1": 0.6736053288925895,
-      "macro_roc_auc": 0.985792876459946,
-      "micro_roc_auc": 0.9868317780626878,
-      "hamming_loss": 0.03266666666666666,
-      "subset_accuracy": 0.86575,
-      "n_test": 4000,
-      "inference_seconds": 1925.34,
-      "examples_per_second": 2.1
+      "macro_f1": 0.4166666666666667,
+      "micro_f1": 0.5185185185185185,
+      "macro_roc_auc": NaN,
+      "micro_roc_auc": 0.9797632684230622,
+      "hamming_loss": 0.043333333333333335,
+      "subset_accuracy": 0.82,
+      "n_test": 50,
+      "inference_seconds": 16.95,
+      "examples_per_second": 3.0
     }
   },
   "lstm_baseline_reference": "/home/matthew-vonroy/meek/data/processed/eval_metrics.json"

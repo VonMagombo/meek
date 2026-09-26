@@ -27,6 +27,7 @@ class ToxicityResult:
     scores: dict = field(default_factory=dict)
     flagged_labels: list = field(default_factory=list)
     is_toxic: bool = False
+    thresholds_used: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return {
@@ -34,7 +35,16 @@ class ToxicityResult:
             "scores": self.scores,
             "flagged_labels": self.flagged_labels,
             "is_toxic": self.is_toxic,
+            "thresholds_used": self.thresholds_used,
         }
+
+
+def _normalize_thresholds(threshold: float | dict[str, float]) -> dict[str, float]:
+    if isinstance(threshold, (int, float)):
+        return {label: float(threshold) for label in LABELS}
+    if isinstance(threshold, dict):
+        return {label: float(threshold.get(label, DEFAULT_THRESHOLD)) for label in LABELS}
+    return {label: DEFAULT_THRESHOLD for label in LABELS}
 
 
 @lru_cache(maxsize=1)
@@ -45,28 +55,81 @@ def _get_pipeline():
         return pipeline("text-classification", model=MODEL_NAME, top_k=None)
 
 
-def classify(text: str, threshold: float = DEFAULT_THRESHOLD) -> ToxicityResult:
+def classify(text: str, threshold: float | dict[str, float] = DEFAULT_THRESHOLD) -> ToxicityResult:
     """Score a single comment across the six Jigsaw toxicity labels."""
+    threshold_map = _normalize_thresholds(threshold)
     if not isinstance(text, str) or not text.strip():
-        return ToxicityResult(text=text or "", scores={label: 0.0 for label in LABELS})
+        return ToxicityResult(
+            text=text or "",
+            scores={label: 0.0 for label in LABELS},
+            thresholds_used=threshold_map,
+        )
 
     pipe = _get_pipeline()
     raw = pipe(text, truncation=True, max_length=512)[0]
     scores = {item["label"]: float(item["score"]) for item in raw}
     # Guarantee every known label is present even if the model output order shifts.
     scores = {label: scores.get(label, 0.0) for label in LABELS}
-    flagged = [label for label in LABELS if scores[label] >= threshold]
+    flagged = [label for label in LABELS if scores[label] >= threshold_map[label]]
 
     return ToxicityResult(
         text=text,
         scores=scores,
         flagged_labels=flagged,
         is_toxic=len(flagged) > 0,
+        thresholds_used=threshold_map,
     )
 
 
-def classify_batch(texts: list, threshold: float = DEFAULT_THRESHOLD) -> list:
-    return [classify(text, threshold=threshold) for text in texts]
+def classify_batch(
+    texts: list[str],
+    threshold: float | dict[str, float] = DEFAULT_THRESHOLD,
+    batch_size: int = 16,
+) -> list[ToxicityResult]:
+    """Score a batch of comments using Hugging Face pipeline batching."""
+    if not texts:
+        return []
+
+    threshold_map = _normalize_thresholds(threshold)
+
+    # Track indices of non-empty texts to batch efficiently
+    valid_indices = []
+    valid_texts = []
+    for idx, t in enumerate(texts):
+        if isinstance(t, str) and t.strip():
+            valid_indices.append(idx)
+            valid_texts.append(t)
+
+    results: list[ToxicityResult | None] = [None] * len(texts)
+
+    # Populate empty entries immediately
+    for idx, t in enumerate(texts):
+        if idx not in valid_indices:
+            results[idx] = ToxicityResult(
+                text=t or "" if isinstance(t, str) else "",
+                scores={label: 0.0 for label in LABELS},
+                flagged_labels=[],
+                is_toxic=False,
+                thresholds_used=threshold_map,
+            )
+
+    if valid_texts:
+        pipe = _get_pipeline()
+        raw_outputs = pipe(valid_texts, truncation=True, max_length=512, batch_size=batch_size)
+        for orig_idx, raw in zip(valid_indices, raw_outputs):
+            scores = {item["label"]: float(item["score"]) for item in raw}
+            scores = {label: scores.get(label, 0.0) for label in LABELS}
+            flagged = [label for label in LABELS if scores[label] >= threshold_map[label]]
+            results[orig_idx] = ToxicityResult(
+                text=texts[orig_idx],
+                scores=scores,
+                flagged_labels=flagged,
+                is_toxic=len(flagged) > 0,
+                thresholds_used=threshold_map,
+            )
+
+    return [r for r in results if r is not None]
+
 
 
 def warm_up() -> None:

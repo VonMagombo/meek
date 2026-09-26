@@ -98,3 +98,87 @@ def test_moderate_shona_when_available(client, fake_shona_classify):
     body = resp.json()
     assert body["language"] == "sn"
     assert body["is_toxic"] is True
+
+
+def test_moderate_with_custom_thresholds(client):
+    # toxic score in fake_classify is 0.9. Setting threshold to 0.95 should make it not flagged.
+    resp = client.post(
+        "/api/v1/moderate",
+        json={"text": "I will kill you, idiot.", "thresholds": {"toxic": 0.95}},
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["is_toxic"] is False
+    assert body["thresholds_used"]["toxic"] == 0.95
+
+
+def test_moderate_auto_language(client, fake_shona_classify):
+    # English text
+    resp_en = client.post(
+        "/api/v1/moderate", json={"text": "Hello, how are you?", "language": "auto"}
+    )
+    assert resp_en.status_code == 200
+    assert resp_en.json()["language"] == "en"
+
+    # Shona text
+    resp_sn = client.post(
+        "/api/v1/moderate",
+        json={"text": "Uri munhu anoshamisa, tinokutendai!", "language": "auto"},
+    )
+    assert resp_sn.status_code == 200
+    assert resp_sn.json()["language"] == "sn"
+
+
+def test_moderate_batch_success(client):
+    comments = ["Thanks so much!", "I hate you, idiot!", "Good morning."]
+    resp = client.post("/api/v1/moderate/batch", json={"texts": comments, "language": "en"})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["total"] == 3
+    assert body["flagged_count"] == 1
+    assert len(body["results"]) == 3
+    assert body["results"][0]["is_toxic"] is False
+    assert body["results"][1]["is_toxic"] is True
+    assert body["results"][2]["is_toxic"] is False
+
+
+def test_moderate_batch_auto_mixed(client, fake_shona_classify):
+    comments = [
+        "Thanks so much!",
+        "Ndichakuuraya iwe benzi.",
+        "Good morning.",
+    ]
+    resp = client.post("/api/v1/moderate/batch", json={"texts": comments, "language": "auto"})
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["total"] == 3
+    assert body["flagged_count"] == 1
+    assert body["results"][0]["language"] == "en"
+    assert body["results"][1]["language"] == "sn"
+    assert body["results"][1]["is_toxic"] is True
+    assert body["results"][2]["language"] == "en"
+
+
+def test_moderate_batch_empty_list_rejected(client):
+    resp = client.post("/api/v1/moderate/batch", json={"texts": []})
+    assert resp.status_code == 422
+
+
+def test_moderate_batch_oversized_rejected(client):
+    resp = client.post("/api/v1/moderate/batch", json={"texts": ["comment"] * 101})
+    assert resp.status_code == 422
+
+
+def test_moderate_batch_shona_unavailable_returns_503(client, monkeypatch):
+    from app.services import moderation_service
+
+    monkeypatch.setattr(moderation_service.shona_toxicity_classifier, "is_available", lambda: False)
+
+    def _raise(texts, threshold=0.5, batch_size=16):
+        raise moderation_service.ShonaModelUnavailableError("not fine-tuned")
+
+    monkeypatch.setattr(moderation_service.shona_toxicity_classifier, "classify_batch", _raise)
+
+    resp = client.post("/api/v1/moderate/batch", json={"texts": ["mhoro"], "language": "sn"})
+    assert resp.status_code == 503
+

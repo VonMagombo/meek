@@ -14,14 +14,20 @@
     </header>
 
     <section class="panel">
-      <div class="lang-row">
-        <span class="field-label" id="lang-label">Language</span>
-        <div class="lang-toggle" role="radiogroup" aria-labelledby="lang-label">
-          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">English</button>
-          <button type="button" class="lang-btn" data-lang="sn" aria-pressed="false">Shona</button>
+      <div class="top-controls">
+        <div class="mode-toggle" role="tablist" aria-label="Input Mode">
+          <button type="button" class="mode-btn active" data-mode="single">Single</button>
+          <button type="button" class="mode-btn" data-mode="batch">Batch</button>
+        </div>
+        <div class="lang-row">
+          <div class="lang-toggle" role="radiogroup" aria-label="Language selection">
+            <button type="button" class="lang-btn active" data-lang="auto" aria-pressed="true">Auto</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+            <button type="button" class="lang-btn" data-lang="sn" aria-pressed="false">Shona</button>
+          </div>
         </div>
       </div>
-      <label class="field-label" for="comment-input">Comment text</label>
+      <label class="field-label" id="input-label" for="comment-input">Comment text</label>
       <textarea
         id="comment-input"
         placeholder="e.g. You are a wonderful person, thank you for helping me!"
