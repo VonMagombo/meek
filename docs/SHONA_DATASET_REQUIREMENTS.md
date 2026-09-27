@@ -4,6 +4,21 @@ This guide defines the specifications, taxonomy, and collection requirements for
 
 ---
 
+## Status: Phase 1 complete
+
+`data/raw/shona_native/matthew_shona_dataset.csv` (352 rows) closes the
+Phase 1 gaps this guide was written to fix — see the README's "Shona
+support" section for the before/after F1 numbers. Native `threat` went from
+0 examples to real training + eval signal (F1 1.00 on native held-out test,
+n=7); native `identity_hate` went from 1 unsupported example to F1 0.737
+(n=11). Section 2's "Current Baseline" numbers below are the **pre-Phase-1**
+snapshot, kept as historical context for why this guide exists — they no
+longer describe the dataset's current state. Phase 2 (1,000-1,500 rows,
+Shonglish depth, regional dialect coverage) is still open; the taxonomy,
+schema, and workflow below remain the reference for contributing to it.
+
+---
+
 ## 1. Executive Summary & Objective
 
 In low-resource African languages like Shona, **data quality and native linguistic authenticity drastically outperform machine-translated volume**. 

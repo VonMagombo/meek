@@ -15,7 +15,7 @@ def test_non_toxic_gate_overrides_category():
 
 def test_plain_insult_categories():
     for category in ["insult", "insult_general", "character_attack", "directed_abuse",
-                      "accusation", "animal", "ableist", "political_incitement"]:
+                      "accusation", "animal", "political_incitement"]:
         assert _labels_set(category, severity=2, is_toxic=True) == {"toxic", "insult"}
 
 
@@ -50,9 +50,26 @@ def test_ethnic_hate_maps_to_identity_hate():
     }
 
 
-def test_threat_never_set():
-    # No category in this dataset maps to threat -- verify the invariant
-    # directly rather than trusting the mapping table by inspection.
+def test_ableist_maps_to_identity_hate_same_as_ethnic_hate():
+    # Disability-directed slurs are identity hate, not a lesser "just an
+    # insult" bucket -- ableist gets the same identity_hate + severe_toxic
+    # treatment as ethnic_hate, just kept as a distinct category name so the
+    # raw data still distinguishes tribal/xenophobic hate from disability
+    # hate.
+    assert _labels_set("ableist", severity=2, is_toxic=True) == {"toxic", "insult", "identity_hate"}
+    assert _labels_set("ableist", severity=4, is_toxic=True) == {
+        "toxic", "insult", "identity_hate", "severe_toxic",
+    }
+
+
+def test_only_threat_category_sets_threat_label():
+    # Regression: CATEGORY_LABELS previously had no "threat" key, so
+    # _row_labels(category, ...).get() silently fell back to an empty set
+    # and every native `threat`-tagged row trained as plain `toxic` only --
+    # the threat classifier head never saw a single native threat example
+    # despite the dataset containing them. Verify both halves of the fix:
+    # threat category sets the label, and no other category leaks into it.
+    assert _labels_set("threat", severity=2, is_toxic=True) == {"toxic", "threat"}
     for category in ["insult", "insult_general", "character_attack", "directed_abuse",
                       "accusation", "animal", "ableist", "political_incitement",
                       "dehumanising", "maternal_insult", "profanity", "sexual_vulgar",
@@ -60,3 +77,12 @@ def test_threat_never_set():
         for severity in range(5):
             result = _row_labels(category, severity, is_toxic=True)
             assert result["threat"] == 0, f"{category}@{severity} unexpectedly set threat"
+
+
+def test_threat_severity_4_kicker_adds_severe_toxic():
+    assert _labels_set("threat", severity=4, is_toxic=True) == {"toxic", "threat", "severe_toxic"}
+    assert _labels_set("threat", severity=3, is_toxic=True) == {"toxic", "threat"}
+
+
+def test_non_toxic_threat_row_stays_all_zero():
+    assert _labels_set("threat", severity=0, is_toxic=False) == set()

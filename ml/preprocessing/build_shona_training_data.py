@@ -6,17 +6,20 @@ ml/training/train_shona_classifier.py, by combining two sources:
    Pristine copy kept at data/processed/shona/silver/{train,val,test}.csv.
 2. Native lexicon data (data/raw/shona_native/): hand-written/lexicon-driven
    Shona sentences, natively labeled toxic/non-toxic with a category +
-   severity (0-4), no English pairing. Real Shona, not translation output --
-   but small (358 rows total) and, per category coverage, has NO `threat`
-   examples at all. See README's "Known limitations" for what this does and
-   doesn't fix.
+   severity (0-4), no English pairing. Real Shona, not translation output.
+   Plus any custom_*.csv dropped in the same directory (auto-discovered by
+   load_custom_datasets()) -- see docs/SHONA_DATASET_REQUIREMENTS.md for the
+   collection workflow. As of the matthew_shona_dataset.csv addition, native
+   `threat` and `ethnic_hate` coverage is no longer zero; see that doc's
+   Phase 1 section for current row counts per gap category.
 
 Category -> six-label mapping (deterministic, documented here so it's
 auditable and re-derivable, not a one-off judgment call buried in code):
 
   literal_or_metalinguistic, or label == "non-toxic": all six labels 0.
+  threat: toxic + threat; + severe_toxic if severity == 4.
   insult, insult_general, character_attack, directed_abuse, accusation,
-    animal, ableist, political_incitement: toxic + insult.
+    animal, political_incitement: toxic + insult.
   dehumanising: toxic + insult; + severe_toxic if severity == 4.
   maternal_insult: toxic + insult; + obscene, severe_toxic if severity == 4.
   profanity: toxic + obscene.
@@ -24,10 +27,13 @@ auditable and re-derivable, not a one-off judgment call buried in code):
   sexual_slur: toxic + obscene + insult; + severe_toxic if severity == 4
     (all sexual_slur rows in this data are severity 4).
   ethnic_hate: toxic + insult + identity_hate; + severe_toxic if severity == 4.
-
-`threat` is 0 for every native row -- there is no threat-category data here.
-Do not read a `threat` improvement into any eval run that includes this data;
-it isn't testing that label.
+  ableist: toxic + insult + identity_hate; + severe_toxic if severity == 4.
+    Same identity_hate treatment as ethnic_hate -- Jigsaw's identity_hate
+    label is defined broadly (race, religion, gender, sexual orientation,
+    disability), and disability-directed slurs are identity hate, not a
+    lesser "just an insult" category. Kept as a separate category name from
+    ethnic_hate so tribal/xenophobic and disability-based hate stay
+    distinguishable in the raw data even though they train the same labels.
 
 Run: python ml/preprocessing/build_shona_training_data.py
 Writes: data/processed/shona/{train,val}.csv (overwritten, merged),
@@ -55,13 +61,14 @@ SEED = 42
 
 # category -> set of labels to set to 1 (before the severity==4 kicker below)
 CATEGORY_LABELS = {
+    "threat": {"toxic", "threat"},
     "insult": {"toxic", "insult"},
     "insult_general": {"toxic", "insult"},
     "character_attack": {"toxic", "insult"},
     "directed_abuse": {"toxic", "insult"},
     "accusation": {"toxic", "insult"},
     "animal": {"toxic", "insult"},
-    "ableist": {"toxic", "insult"},
+    "ableist": {"toxic", "insult", "identity_hate"},
     "political_incitement": {"toxic", "insult"},
     "dehumanising": {"toxic", "insult"},
     "maternal_insult": {"toxic", "insult"},
@@ -76,7 +83,9 @@ CATEGORY_LABELS = {
 # categories where a severity-4 row also gets obscene (on top of CATEGORY_LABELS)
 SEV4_ADDS_OBSCENE = {"maternal_insult"}
 # categories where a severity-4 row also gets severe_toxic
-SEV4_ADDS_SEVERE_TOXIC = {"dehumanising", "maternal_insult", "sexual_vulgar", "sexual_slur", "ethnic_hate"}
+SEV4_ADDS_SEVERE_TOXIC = {
+    "dehumanising", "maternal_insult", "sexual_vulgar", "sexual_slur", "ethnic_hate", "threat", "ableist",
+}
 
 
 def _row_labels(category: str, severity: int, is_toxic: bool) -> dict:

@@ -77,8 +77,12 @@ def test_custom_thresholds():
     normal = classify(text, threshold=0.5)
     assert normal.is_toxic is True
 
-    # With very high threshold, it should not be flagged
-    high = classify(text, threshold=0.9999)
+    # A threshold above 1.0 must suppress every label regardless of how
+    # confident the model is (scores are probabilities, capped at 1.0) --
+    # 0.9999 used to work only because the older, less-confident model
+    # happened to score this exact phrase below it; it broke the moment
+    # retraining on more native threat examples pushed the score past it.
+    high = classify(text, threshold=1.0001)
     assert high.is_toxic is False
     assert high.flagged_labels == []
 

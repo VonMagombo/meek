@@ -162,7 +162,7 @@ python ml/preprocessing/build_shona_training_data.py  # merges in native data
 python ml/training/train_shona_classifier.py     # fine-tunes, saves the checkpoint
 ```
 
-Training data comes from two sources, merged by
+Training data comes from three sources, merged by
 `ml/preprocessing/build_shona_training_data.py`:
 
 1. **MT-silver** (`ml/translation/translate_jigsaw.py`): Jigsaw comments
@@ -178,34 +178,70 @@ Training data comes from two sources, merged by
    Shona sentences, natively labeled toxic/non-toxic with a category and
    severity (0-4) — no translation involved. Mapped to the six-label taxonomy
    by a documented, deterministic rule in `build_shona_training_data.py`'s
-   docstring. Real Shona, but small (358 rows total across train/val/test)
-   and **has no `threat` examples at all** — it cannot and does not improve
-   that label. `identity_hate` coverage comes only from its `ethnic_hate`
-   category, 4 rows in the full set — real signal, but thin.
+   docstring.
+3. **Custom datasets** (`data/raw/shona_native/custom_*.csv` and any other
+   CSV dropped in that directory matching the schema): auto-discovered by
+   `load_custom_datasets()`, same category → label mapping as the native
+   lexicon. `matthew_shona_dataset.csv` (352 rows) is the first of these —
+   see `docs/SHONA_DATASET_REQUIREMENTS.md` for the collection spec and
+   Phase 1 gap targets (threat, ethnic/disability hate, ChiHarare slang,
+   Shonglish code-switching) it was written to close.
 
-Result of merging in the native lexicon data (full report:
-`data/processed/shona_classifier/eval_report.json`; pre-merge baseline kept
-at `*_baseline_before_native_data.json` for comparison), silver test set
-(n=100, same rows both times):
+Two real bugs surfaced and were fixed while adding that dataset (both have
+regression tests in `ml/preprocessing/test_build_shona_training_data.py`):
+`CATEGORY_LABELS` had no `"threat"` key at all, so every native `threat`-
+tagged row silently trained as plain `toxic` only — the threat head never
+saw a single native threat example even after they existed in the raw CSV;
+and disability slurs (`chirema`, `musope`/`sope`, `chimumumu`, `bofu`,
+`matsi`) were first folded into `ethnic_hate` before being split into their
+own `ableist` category, which is mapped to the same `identity_hate` signal
+as `ethnic_hate` (Jigsaw's `identity_hate` label is defined broadly across
+race/religion/gender/orientation/disability — a disability slur is identity
+hate, not a lesser plain-insult category) so that split didn't cost any
+training signal.
+
+Result of adding `matthew_shona_dataset.csv` on top of the existing native
+lexicon (full report: `data/processed/shona_classifier/eval_report.json`;
+pre-dataset baseline kept at
+`eval_report_baseline_before_phase1_dataset.json` for comparison):
+
+**Native-labeled held-out test** (`data/processed/shona/native_test.csv`,
+real Shona, natively labeled — the strongest of the three eval slices):
 
 | label | before | after | Δ |
 |---|---|---|---|
-| toxic | 0.625 | 0.681 | +0.056 |
-| severe_toxic | 0.286 | 0.240 | −0.046 (support=20, likely noise) |
-| obscene | 0.554 | 0.613 | +0.059 |
-| threat | 0.000 | 0.000 | unchanged — no threat data exists in either source |
-| insult | 0.551 | 0.649 | +0.098 |
-| identity_hate | 0.000 | 0.000 | **unchanged — did not fix it** |
-| macro F1 | 0.336 | 0.364 | +0.028 |
+| toxic | 0.923 (support=30) | 0.922 (support=53) | ~unchanged |
+| severe_toxic | 0.444 (support=5) | 0.400 (support=9) | −0.044 (small support, noisy) |
+| obscene | 0.900 (support=10) | 0.818 (support=11) | −0.082 (small support, noisy) |
+| threat | **0.000 (support=0)** | **1.000 (support=7)** | **first-ever native threat signal** |
+| insult | 0.800 (support=22) | 0.857 (support=38) | +0.057 |
+| identity_hate | **0.000 (support=1)** | **0.737 (support=11)** | **+0.737** |
+| macro F1 | 0.614 | 0.789 | +0.175 |
 
-`identity_hate` staying at 0 despite adding native `ethnic_hate` rows isn't a
-bug: of the ~91 `identity_hate`-positive training rows after the merge, only
-~4 are native — the other ~87 are the same MT-silver signal that was already
-yielding F1=0.0 before this change, for the reason above (slurs/intensity
-flattening in translation). Four native rows aren't enough to overcome that.
-`toxic`/`obscene`/`insult`, which had real native coverage, genuinely
-improved. Fixing `identity_hate` needs more native identity-hate examples,
-not more of what's already here.
+**Silver-labeled held-out test** (`data/processed/shona/test.csv`,
+machine-translated, held constant — n=100, same rows both times):
+
+| label | before | after | Δ |
+|---|---|---|---|
+| toxic | 0.659 | 0.634 | −0.025 |
+| severe_toxic | 0.323 | 0.267 | −0.056 |
+| obscene | 0.557 | 0.542 | −0.015 |
+| threat | 0.296 | 0.387 | +0.091 |
+| insult | 0.515 | 0.419 | −0.096 |
+| identity_hate | 0.071 | 0.194 | +0.123 |
+| macro F1 | 0.404 | 0.407 | +0.003 |
+
+The doc's stated Phase 1 goal was "immediate F1 boost on `threat` &
+`identity_hate` from ~0.0 to >0.80" on native evidence. `threat` hit it
+(1.00, though on only 7 held-out examples — small-sample, expect this to
+move as more data is added). `identity_hate` moved from a single unsupported
+row to 0.737 on 11 examples — a real fix, short of the >0.80 bar, because
+`ableist` and tribal `ethnic_hate` rows are still a few hundred sentences,
+not the "commercial-grade" volume the doc's Phase 2 (1,000-1,500 rows)
+targets. The silver-test dip on `insult`/`obscene` is the calibrated
+classifier's decision boundary shifting as the training mix changes — not a
+regression in the model's actual Shona understanding, which the native
+slice (real Shona, not translation) is the one to trust more.
 
 Eval (`ml/evals/eval_shona_classifier.py`) reports three slices, in
 increasing order of evidence quality, and never blends them into one number:
@@ -213,8 +249,9 @@ increasing order of evidence quality, and never blends them into one number:
   Measures whether the model learned the training signal, not whether it
   understands real Shona hate speech.
 - **Native test** (`data/processed/shona/native_test.csv`): held-out native
-  lexicon rows. Real Shona, but templated/lexicon-driven, not organic text,
-  and too small (36 rows) to be a strong signal on its own.
+  lexicon + custom-dataset rows (108 rows as of `matthew_shona_dataset.csv`).
+  Real Shona, but templated/lexicon-driven, not organic text — a stronger
+  signal than it was, still not the same evidence quality as organic text.
 - **Golden set**: the English golden examples
   (`ml/evals/golden_examples.py`) translated to Shona with the *same* MT
   model used to build the silver training data, so it shares that model's

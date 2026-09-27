@@ -1,74 +1,109 @@
 comment_text_en,comment_text_sn,toxic,severe_toxic,obscene,threat,insult,identity_hate,source
-,Uri hwai.,1,0,0,0,1,0,native_lexicon
-,Uri munhu anonzwisisa,0,0,0,0,0,0,native_conversational_clean
-,Uri tsvina.,1,0,0,0,1,0,native_lexicon
-,Iwe hauna pfungwa.,1,0,0,0,1,0,native_lexicon
-,Ndakaona mbavha mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,Waswera sei,0,0,0,0,0,0,native_conversational_clean
+,Tichakupisira imba yako pasina anosara mairi.,1,1,0,1,0,0,custom_matthew_shona_dataset
 ,uri dhongi,1,0,0,0,1,0,native_lexicon
-,Ndakaona mutengesi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
-,mapengo,1,0,0,0,1,0,native_lexicon
-,Tinofara zvikuru kuva nemunhu akaita sewe pabasa iri.,0,0,0,0,0,0,native_conversational_clean
-,Uri kushanda zvakanaka,0,0,0,0,0,0,native_conversational_clean
-,zvifeve,1,1,1,0,1,0,native_lexicon
-,makwai,1,0,0,0,1,0,native_lexicon
-,Ndinokumbirawo rubatsiro rwenyu pane izvi.,0,0,0,0,0,0,native_conversational_clean
-,beche,1,1,1,0,0,0,native_lexicon
-,Mashoko aya haana kunaka: chidhoma.,1,0,1,0,0,0,native_lexicon
-,tenda,0,0,0,0,0,0,native_conversational_clean
-,Kugona kutaura mutauro wako chiratidzo chekuzvikudza.,0,0,0,0,0,0,native_conversational_clean
-,ramai wako,1,1,1,0,1,0,native_lexicon
-,Uri munhu ane mutsa,0,0,0,0,0,0,native_conversational_clean
-,Kwaziwai shamwari dzangu,0,0,0,0,0,0,native_conversational_clean
-,Uri mutorwa.,1,0,0,0,1,0,native_lexicon
-,kusvira,1,1,1,0,0,0,native_lexicon
-,jira,0,0,0,0,0,0,native_conversational_clean
-,Rugare kwamuri,0,0,0,0,0,0,native_conversational_clean
-,Iwe benzi.,1,0,0,0,1,0,native_lexicon
-,Upenyu chipo chinokosha chatinofanira kuchengetedza.,0,0,0,0,0,0,native_conversational_clean
-,miti,0,0,0,0,0,0,native_conversational_clean
+,Uri hwai.,1,0,0,0,1,0,native_lexicon
+,Tinofanira kuremekedza vanhu vese pasinei nekwavakabva.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,Mhuri yedu,0,0,0,0,0,0,native_conversational_clean
+,Iwe nemhuri yako muve nerugare,0,0,0,0,0,0,native_conversational_clean
 ,zinguruve,1,0,0,0,1,0,native_lexicon
+,Ndinokumbirawo rubatsiro rwenyu pane izvi.,0,0,0,0,0,0,native_conversational_clean
+,Vanhu vebofu havafaniri kutungamira vanhu vane utano hwakakwana.,1,0,0,0,1,1,custom_matthew_shona_dataset
+,mambavha,1,0,0,0,1,0,native_lexicon
+,"Havasi vanhu chaivo, vanongofanana nemhuka dzinofamba pasina zano.",1,1,0,0,1,1,custom_matthew_shona_dataset
+,"Rudzi rwavo runongoziva kuba chete, hazviva zvakavakomborera.",1,0,0,0,1,1,custom_matthew_shona_dataset
+,Iwe hauna pfungwa.,1,0,0,0,1,0,native_lexicon
+,"Dzokera kunyika yako iwe, hatidi rudzi rwako pano.",1,0,0,0,1,1,custom_matthew_shona_dataset
+,Uri tsvina.,1,0,0,0,1,0,native_lexicon
+,Mwari vakuropafadze iwe,0,0,0,0,0,0,native_conversational_clean
+,Upenyu chipo chinokosha chatinofanira kuchengetedza.,0,0,0,0,0,0,native_conversational_clean
+,"Ndichakuuraya nemaoko angu chaiwo, hapana chikwereti.",1,1,0,1,0,0,custom_matthew_shona_dataset
+,"Great hustle shamwari, that mbinga energy is inspiring.",0,0,0,0,0,0,custom_matthew_shona_dataset
+,miti,0,0,0,0,0,0,native_conversational_clean
+,mapengo,1,0,0,0,1,1,native_lexicon
+,Ndeipi,0,0,0,0,0,0,native_conversational_clean
+,Uri sekuru vakanaka,0,0,0,0,0,0,native_conversational_clean
+,uri mhuka,1,0,0,0,1,0,native_lexicon
+,Mashoko aya haana kunaka: chidhoma.,1,0,1,0,0,0,native_lexicon
+,zvifeve,1,1,1,0,1,0,native_lexicon
 ,Chirongwa chemubatanidzwa ichi chichabatsira nharaunda yose.,0,0,0,0,0,0,native_conversational_clean
-,Tine chivimbo chokuti zvirongwa zvedu zvichabudirira.,0,0,0,0,0,0,native_conversational_clean
-,Mashoko aya haana kunaka: benzi.,1,0,1,0,0,0,native_lexicon
-,Ndiri pano,0,0,0,0,0,0,native_conversational_clean
-,Mashoko aya haana kunaka: svira.,1,0,1,0,0,0,native_lexicon
+,Vamwe vanhu vanofunga kuti rudzi rwavo ndirwo rwakasikwa kutonga vamwe.,1,0,0,0,1,1,custom_matthew_shona_dataset
+,Uri munhu asina maturo.,1,0,0,0,1,0,native_lexicon
+,jira,0,0,0,0,0,0,native_conversational_clean
+,"This guy is a muroyi chaiye, he ruined everything.",1,0,0,0,1,0,custom_matthew_shona_dataset
+,That soccer match yanga iri intense chaizvo.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,makwai,1,0,0,0,1,0,native_lexicon
+,ramai wako,1,1,1,0,1,0,native_lexicon
+,Tinofara zvikuru kuva nemunhu akaita sewe pabasa iri.,0,0,0,0,0,0,native_conversational_clean
+,"Ndeipi majita, tirikuita sei nhasi?",0,0,0,0,0,0,custom_matthew_shona_dataset
+,Ndakaona mbavha mumutsara uyu.,0,0,0,0,0,0,native_lexicon
 ,Iwe mukoma wangu,0,0,0,0,0,0,native_conversational_clean
-,mai vako,1,0,0,0,1,0,native_lexicon
+,beche,1,1,1,0,0,0,native_lexicon
 ,Maita basa chaizvo uye muve nevhiki rakanaka kwazvo.,0,0,0,0,0,0,native_conversational_clean
+,"Ndeipi guys, hope the weekend is treating you well.",0,0,0,0,0,0,custom_matthew_shona_dataset
+,Uri munhu ane mutsa,0,0,0,0,0,0,native_conversational_clean
+,kusvira,1,1,1,0,0,0,native_lexicon
+,Uri mutorwa.,1,0,0,0,1,0,native_lexicon
+,Moto uyu unopisa zvakanyanya chenjerai.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,Ndakaona mutengesi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Iwe shamwari yangu yepedyo,0,0,0,0,0,0,native_conversational_clean
+,Iwe benzi.,1,0,0,0,1,0,native_lexicon
+,rwizi,0,0,0,0,0,0,native_conversational_clean
+,Uri kushanda zvakanaka,0,0,0,0,0,0,native_conversational_clean
+,Waswera sei,0,0,0,0,0,0,native_conversational_clean
+,Ndakaona tsvina mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Mashoko aya haana kunaka: benzi.,1,0,1,0,0,0,native_lexicon
+,Sarudzo dzinofanira kuitwa nevanhu vese pasinei nezvinodiwa nemunhu mumwe.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,"These majita are useless, vanongodhakwa the whole day.",1,0,0,0,1,0,custom_matthew_shona_dataset
+,Mashoko aya haana kunaka: svira.,1,0,1,0,0,0,native_lexicon
+,Iwe unoda runyararo,0,0,0,0,0,0,native_conversational_clean
+,Tine chivimbo chokuti zvirongwa zvedu zvichabudirira.,0,0,0,0,0,0,native_conversational_clean
+,mai vako,1,0,0,0,1,0,native_lexicon
+,Mashoko aya haana kunaka: tsotsi.,1,0,1,0,0,0,native_lexicon
 ,iwe benzi,1,0,0,0,1,0,native_lexicon
 ,Usandidaidza mutengesi.,1,0,0,0,1,0,native_lexicon
 ,Ndatenda,0,0,0,0,0,0,native_conversational_clean
 ,Usandidaidza tsvina yemunhu.,1,0,0,0,1,0,native_lexicon
-,mutsva,0,0,0,0,0,0,native_conversational_clean
+,Iwe uri chimbwido chisina basa muhupenyu.,1,0,0,0,1,0,custom_matthew_shona_dataset
 ,Shoko rokuti imbwa riri mubhuku.,0,0,0,0,0,0,native_lexicon
-,Ndeipi,0,0,0,0,0,0,native_conversational_clean
-,Iwe nemhuri yako muve nerugare,0,0,0,0,0,0,native_conversational_clean
+,Kwaziwai shamwari dzangu,0,0,0,0,0,0,native_conversational_clean
+,"Kana ndikakuwana panzvimbo ino zvakare, hauchazobviimo uri mupenyu.",1,1,0,1,0,0,custom_matthew_shona_dataset
+,Kuridza mbira kunonakidza pamitambo yechinyakare.,0,0,0,0,0,0,custom_matthew_shona_dataset
 ,Ndinokutendai chose nenguva yamakandipa nhasi.,0,0,0,0,0,0,native_conversational_clean
+,Kugona kutaura mutauro wako chiratidzo chekuzvikudza.,0,0,0,0,0,0,native_conversational_clean
+,Ndichapisa motokari yako paunenge usipo.,1,0,0,1,0,0,custom_matthew_shona_dataset
 ,Mvura iri kunaya zvakanaka gore rino muminda yose.,0,0,0,0,0,0,native_conversational_clean
-,Titambirei,0,0,0,0,0,0,native_conversational_clean
-,Uri munhu asina maturo.,1,0,0,0,1,0,native_lexicon
-,Ndakaona tsvina mumutsara uyu.,0,0,0,0,0,0,native_lexicon
+,Vanhu vokune imwe nyika havafaniri kuwana mabasa kunze kwevemuno.,1,0,0,0,1,1,custom_matthew_shona_dataset
+,Rugare kwamuri,0,0,0,0,0,0,native_conversational_clean
+,"You are just a murombo trying to act rich, so fake.",1,0,0,0,1,0,custom_matthew_shona_dataset
+,"Ndeyako mboko, hauzivi kunyange zvekutaura zvakanaka.",1,0,0,0,1,0,custom_matthew_shona_dataset
 ,shamwari,0,0,0,0,0,0,native_conversational_clean
-,uri mhuka,1,0,0,0,1,0,native_lexicon
+,mutsva,0,0,0,0,0,0,native_conversational_clean
 ,Mwari vakomborere basa riri kuitwa nevanhu ava.,0,0,0,0,0,0,native_conversational_clean
-,Mashoko aya haana kunaka: tsotsi.,1,0,1,0,0,0,native_lexicon
-,Mhuri yedu,0,0,0,0,0,0,native_conversational_clean
-,Iwe shamwari yangu yepedyo,0,0,0,0,0,0,native_conversational_clean
-,mambavha,1,0,0,0,1,0,native_lexicon
+,Ndichakubata ndokukusiya usisina zita pakati pevanhu.,1,0,0,1,0,0,custom_matthew_shona_dataset
+,tenda,0,0,0,0,0,0,native_conversational_clean
+,Uchabuda ropa kana ukadzokazve pano.,1,0,0,1,0,0,custom_matthew_shona_dataset
 ,Uri chidhoma.,1,0,0,0,1,0,native_lexicon
-,Mwari vakuropafadze iwe,0,0,0,0,0,0,native_conversational_clean
-,Uri sekuru vakanaka,0,0,0,0,0,0,native_conversational_clean
+,"Mhando yerudzi urwu haizivi kubata mari zvakanaka, vanongoparadza chete.",1,0,0,0,1,1,custom_matthew_shona_dataset
+,Ndiri pano,0,0,0,0,0,0,native_conversational_clean
+,Uri munhu anonzwisisa,0,0,0,0,0,0,native_conversational_clean
+,Amai vako havana kukudzidzisa hunhu here iwe?,1,0,0,0,1,0,custom_matthew_shona_dataset
 ,Kwaziwai mose,0,0,0,0,0,0,native_conversational_clean
 ,Usandidaidza hauna pfungwa.,1,0,0,0,1,0,native_lexicon
-,rwizi,0,0,0,0,0,0,native_conversational_clean
-,Iwe unoda runyararo,0,0,0,0,0,0,native_conversational_clean
+,Vanhu verudzi urwu havafaniri kupihwa zvigaro muhurumende.,1,0,0,0,1,1,custom_matthew_shona_dataset
 ,Mashoko aya haana kunaka: nyoka.,1,0,1,0,0,0,native_lexicon
 ,Ndinokumbira kuti musarudze runyararo nguva dzose.,0,0,0,0,0,0,native_conversational_clean
 ,Ndakaona muroyi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
 ,Ndakaona mbudzi mumutsara uyu.,0,0,0,0,0,0,native_lexicon
 ,Uri mabhurandaya.,1,0,0,0,1,0,native_lexicon
+,Ndinofara nekuwana basa idzva iri pedyo nemusha.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,Vamwe vatorwa vanongouya kuzoroora vanasikana vedu vachivaparadza.,1,0,0,0,1,1,custom_matthew_shona_dataset
+,Uchatunda ropa nhasi ukaramba uchindishora.,1,0,0,1,0,0,custom_matthew_shona_dataset
+,Mukoma wangu akauya kuzondiona kuchikoro.,0,0,0,0,0,0,custom_matthew_shona_dataset
+,Munhu wese ane kodzero dzekuremekedzwa pasinei nerudzi rwake.,0,0,0,0,0,0,custom_matthew_shona_dataset
 ,Mashoko aya haana kunaka: bofu.,1,0,1,0,0,0,native_lexicon
 ,Upenyu hwakanaka,0,0,0,0,0,0,native_conversational_clean
+,Titambirei,0,0,0,0,0,0,native_conversational_clean
 ,bhurandaya,1,1,0,0,1,1,native_lexicon
+,Amai nababa vanofanira kuremekedzwa nevana vavo vese.,0,0,0,0,0,0,custom_matthew_shona_dataset
 ,Fambai zvakanaka muve nerwendo rwakanaka uye rwakachengeteka.,0,0,0,0,0,0,native_conversational_clean
+,Zvauri kuita zvinoratidza kuti uri zimbudzana risina musoro.,1,0,0,0,1,0,custom_matthew_shona_dataset
