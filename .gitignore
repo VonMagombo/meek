@@ -11,3 +11,11 @@ __pycache__/
 # Shona numbers cite) -- only the actual weight-bearing dirs are excluded.
 data/processed/shona_classifier/checkpoints/
 data/processed/shona_classifier/final/
+
+# Editor and temporary files
+.~lock.*#
+*.swp
+*.swo
+*~
+.DS_Store
+

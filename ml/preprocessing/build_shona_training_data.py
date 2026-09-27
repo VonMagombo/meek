@@ -136,6 +136,51 @@ def load_clean_conversational_splits() -> tuple[pd.DataFrame, pd.DataFrame, pd.D
     return _format(train_df), _format(val_df), _format(test_df)
 
 
+def load_custom_datasets() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Find any custom Shona datasets in NATIVE_DIR and split them 80/10/10."""
+    custom_dfs = []
+    for csv_file in NATIVE_DIR.glob("*.csv"):
+        if csv_file.name in ["clean_conversational.csv", "full.csv", "train.csv", "test.csv", "validation.csv"]:
+            continue
+        if csv_file.name == "custom_shona_template.csv":
+            try:
+                if len(pd.read_csv(csv_file)) <= 15:
+                    continue
+            except Exception:
+                continue
+        try:
+            df = pd.read_csv(csv_file)
+            if all(col in df.columns for col in ["text", "label", "category", "severity"]):
+                print(f"Found custom dataset: {csv_file.name} ({len(df)} rows)")
+                label_rows = [
+                    _row_labels(str(row["category"]), int(row["severity"]), str(row["label"]) == "toxic")
+                    for _, row in df.iterrows()
+                ]
+                labels_df = pd.DataFrame(label_rows, columns=LABELS)
+                formatted = pd.DataFrame(
+                    {
+                        "comment_text_en": "",
+                        "comment_text_sn": df["text"],
+                        **{label: labels_df[label] for label in LABELS},
+                        "source": f"custom_{csv_file.stem}",
+                    }
+                )
+                custom_dfs.append(formatted)
+        except Exception as e:
+            print(f"Skipping {csv_file.name}: {e}")
+
+    if not custom_dfs:
+        empty = pd.DataFrame(columns=["comment_text_en", "comment_text_sn"] + LABELS + ["source"])
+        return empty, empty, empty
+
+    combined = pd.concat(custom_dfs, ignore_index=True)
+    train_df = combined.sample(frac=0.8, random_state=SEED)
+    rest_df = combined.drop(train_df.index)
+    val_df = rest_df.sample(frac=0.5, random_state=SEED)
+    test_df = rest_df.drop(val_df.index)
+    return train_df, val_df, test_df
+
+
 def load_silver_split(name: str) -> pd.DataFrame:
     df = pd.read_csv(SILVER_DIR / f"{name}.csv")
     df = df.copy()
@@ -143,12 +188,19 @@ def load_silver_split(name: str) -> pd.DataFrame:
     return df
 
 
-def merge_split(name: str, native_name: str, clean_df: pd.DataFrame | None = None) -> pd.DataFrame:
+def merge_split(
+    name: str,
+    native_name: str,
+    clean_df: pd.DataFrame | None = None,
+    custom_df: pd.DataFrame | None = None,
+) -> pd.DataFrame:
     silver = load_silver_split(name)
     native = load_native_split(native_name)
     dfs = [silver, native]
     if clean_df is not None and not clean_df.empty:
         dfs.append(clean_df)
+    if custom_df is not None and not custom_df.empty:
+        dfs.append(custom_df)
     merged = pd.concat(dfs, ignore_index=True)
     return merged.sample(frac=1, random_state=SEED).reset_index(drop=True)
 
@@ -168,10 +220,15 @@ def main() -> None:
             sys.exit(1)
 
     clean_train, clean_val, clean_test = load_clean_conversational_splits()
+    custom_train, custom_val, custom_test = load_custom_datasets()
 
-    train = merge_split("train", "train", clean_train)
-    val = merge_split("val", "validation", clean_val)
-    native_test = pd.concat([load_native_split("test"), clean_test], ignore_index=True).sample(
+    train = merge_split("train", "train", clean_train, custom_train)
+    val = merge_split("val", "validation", clean_val, custom_val)
+    native_test_parts = [load_native_split("test"), clean_test]
+    if not custom_test.empty:
+        native_test_parts.append(custom_test)
+
+    native_test = pd.concat(native_test_parts, ignore_index=True).sample(
         frac=1, random_state=SEED
     ).reset_index(drop=True)
 

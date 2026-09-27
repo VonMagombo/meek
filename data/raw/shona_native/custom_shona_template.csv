@@ -1,0 +1,12 @@
+text,label,category,severity,source_lemma
+"Ndichakurova zvekuti haumuki pano.",toxic,threat,3,kurova
+"Tichakupisira imba yako nemhuri yako yese.",toxic,threat,4,kupisa
+"Ndichakutsvaga kana ndapedza basa rangu.",non-toxic,benign_conversational,0,kutsvaga
+"Kurova bhora kunonakidza chaizvo.",non-toxic,benign_conversational,0,kurova
+"Uyu munhu imboko chaiyo haana zvaanoziva.",toxic,insult,2,mboko
+"Mudhara uyu ane moyo wakanaka zvikuru.",non-toxic,benign_conversational,0,moyo
+"Tiri vanhu vamwe chete muZimbabwe ngatidanane.",non-toxic,benign_conversational,0,vanhu
+"Imbwa yangu iri kurara pamumvuri panze.",non-toxic,literal_or_metalinguistic,0,imbwa
+"Uri imbwa isina maturo yemunhu.",toxic,insult,3,imbwa
+"This guy is a muroyi chaiye he ruined everything.",toxic,insult,3,muroyi
+"Thanks shamwari for the quick delivery.",non-toxic,benign_conversational,0,thanks
