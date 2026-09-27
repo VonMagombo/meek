@@ -12,6 +12,7 @@ Uniform interface with ml/inference/toxicity_classifier.py for seamless backend 
 
 from __future__ import annotations
 
+import re
 from functools import lru_cache
 from pathlib import Path
 from threading import Lock
@@ -31,6 +32,65 @@ CALIBRATED_MODEL_PATH = OUT_DIR / "calibrated_model.joblib"
 MODEL_DIR = OUT_DIR / "final"
 
 _load_lock = Lock()
+_WORD_RE = re.compile(r"[a-z']+")
+
+_BENIGN_TOKENS = {
+    "mhoro", "mhoroi", "makadii", "wakadii", "sakadii", "maswerasei", "waswerasei",
+    "mangwanani", "masikati", "manheru", "zvakanaka", "akanaka", "yakanaka", "chakanaka",
+    "ndatenda", "tinotenda", "ndinotenda", "maita", "basa", "shamwari", "yangu",
+    "wangu", "chose", "kwazvo", "zvikuru", "chaizvo", "kwamuri", "kwauri",
+    "titambire", "titambirei", "mauya", "mauyai", "chisarai", "fambai", "henyu",
+    "zvako", "zvangu", "hama", "rugare", "mufaro", "mwari", "vakuropafadzei",
+    "ndeipi", "sei", "nhasi", "kufara", "tiri", "munhu", "vanhu", "chokwadi"
+}
+
+_KNOWN_TOXIC_TOKENS = {
+    "imbwa", "benzi", "dofo", "mbavha", "muroyi", "chifeve", "mabeche", "svira",
+    "beche", "mboro", "mhata", "hure", "uraya", "ndichakuuraya", "tsotsi", "gonzo"
+}
+
+
+def _is_whitelisted_benign(text: str) -> bool:
+    tokens = _WORD_RE.findall(text.lower())
+    if not tokens or len(tokens) > 10:
+        return False
+    if any(t in _KNOWN_TOXIC_TOKENS for t in tokens):
+        return False
+    return any(t in _BENIGN_TOKENS for t in tokens) and all(
+        t in _BENIGN_TOKENS or len(t) <= 2 for t in tokens
+    )
+
+
+_EXPLICIT_SLUR_FLOORS: dict[str, dict[str, float]] = {
+    "benzi": {"toxic": 0.85, "insult": 0.85},
+    "mapenzi": {"toxic": 0.85, "insult": 0.85},
+    "dofo": {"toxic": 0.80, "insult": 0.80},
+    "muroyi": {"toxic": 0.85, "insult": 0.85},
+    "varoyi": {"toxic": 0.85, "insult": 0.85},
+    "chifeve": {"toxic": 0.90, "insult": 0.85, "obscene": 0.80},
+    "mabeche": {"toxic": 0.90, "obscene": 0.90, "severe_toxic": 0.70},
+    "svira": {"toxic": 0.90, "obscene": 0.90},
+    "beche": {"toxic": 0.90, "obscene": 0.90},
+    "mboro": {"toxic": 0.90, "obscene": 0.90},
+    "mhata": {"toxic": 0.90, "insult": 0.85, "obscene": 0.80},
+    "hure": {"toxic": 0.90, "insult": 0.85},
+    "ndichakuuraya": {"toxic": 0.95, "threat": 0.90},
+    "mbavha": {"toxic": 0.75, "insult": 0.75},
+}
+
+
+def _apply_lexical_floors(text: str, scores: dict[str, float]) -> dict[str, float]:
+    tokens = _WORD_RE.findall(text.lower())
+    if not tokens:
+        return scores
+    floors: dict[str, float] = {}
+    for token in tokens:
+        if token in _EXPLICIT_SLUR_FLOORS:
+            for label, floor_val in _EXPLICIT_SLUR_FLOORS[token].items():
+                floors[label] = max(floors.get(label, 0.0), floor_val)
+    if floors:
+        return {label: max(scores[label], floors.get(label, 0.0)) for label in LABELS}
+    return scores
 
 
 class ModelNotFineTunedError(RuntimeError):
@@ -95,6 +155,11 @@ def classify(text: str, threshold: float | dict[str, float] = DEFAULT_THRESHOLD)
             probs = torch.sigmoid(logits).tolist()
             scores = {label: float(prob) for label, prob in zip(LABELS, probs)}
 
+    if _is_whitelisted_benign(text):
+        scores = {label: min(scores[label], 0.02) for label in LABELS}
+    else:
+        scores = _apply_lexical_floors(text, scores)
+
     flagged = [label for label in LABELS if scores[label] >= threshold_map[label]]
 
     return ToxicityResult(
@@ -148,6 +213,10 @@ def classify_batch(
 
             for i, orig_idx in enumerate(valid_indices):
                 scores = {label: float(prob_by_label[label][i]) for label in LABELS}
+                if _is_whitelisted_benign(texts[orig_idx]):
+                    scores = {label: min(scores[label], 0.02) for label in LABELS}
+                else:
+                    scores = _apply_lexical_floors(texts[orig_idx], scores)
                 flagged = [label for label in LABELS if scores[label] >= threshold_map[label]]
                 results[orig_idx] = ToxicityResult(
                     text=texts[orig_idx],
@@ -177,6 +246,10 @@ def classify_batch(
 
                     for orig_idx, item_probs in zip(chunk_indices, probs):
                         scores = {label: float(p) for label, p in zip(LABELS, item_probs)}
+                        if _is_whitelisted_benign(texts[orig_idx]):
+                            scores = {label: min(scores[label], 0.02) for label in LABELS}
+                        else:
+                            scores = _apply_lexical_floors(texts[orig_idx], scores)
                         flagged = [label for label in LABELS if scores[label] >= threshold_map[label]]
                         results[orig_idx] = ToxicityResult(
                             text=texts[orig_idx],

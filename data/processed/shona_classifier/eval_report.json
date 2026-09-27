@@ -1,31 +1,31 @@
 {
   "silver_test": {
     "n_examples": 100,
-    "macro_f1": 0.3966050477908533,
-    "micro_f1": 0.47491638795986624,
+    "macro_f1": 0.40356177709730917,
+    "micro_f1": 0.48135593220338985,
     "per_label": {
       "toxic": {
-        "precision": 0.7428571428571429,
-        "recall": 0.5416666666666666,
-        "f1": 0.6265060240963856,
+        "precision": 0.7941176470588235,
+        "recall": 0.5625,
+        "f1": 0.6585365853658537,
         "support": 48
       },
       "severe_toxic": {
-        "precision": 0.4166666666666667,
+        "precision": 0.45454545454545453,
         "recall": 0.25,
-        "f1": 0.3125,
+        "f1": 0.3225806451612903,
         "support": 20
       },
       "obscene": {
-        "precision": 0.6923076923076923,
-        "recall": 0.5,
-        "f1": 0.5806451612903226,
+        "precision": 0.68,
+        "recall": 0.4722222222222222,
+        "f1": 0.5573770491803278,
         "support": 36
       },
       "threat": {
-        "precision": 0.45454545454545453,
-        "recall": 0.2777777777777778,
-        "f1": 0.3448275862068966,
+        "precision": 0.4444444444444444,
+        "recall": 0.2222222222222222,
+        "f1": 0.2962962962962963,
         "support": 18
       },
       "insult": {
@@ -35,22 +35,22 @@
         "support": 40
       },
       "identity_hate": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
+        "precision": 0.3333333333333333,
+        "recall": 0.04,
+        "f1": 0.07142857142857142,
         "support": 25
       }
     }
   },
   "native_test": {
-    "n_examples": 65,
-    "macro_f1": 0.6357190324295587,
-    "micro_f1": 0.8905109489051095,
+    "n_examples": 73,
+    "macro_f1": 0.6135042735042735,
+    "micro_f1": 0.8413793103448276,
     "per_label": {
       "toxic": {
-        "precision": 0.8823529411764706,
+        "precision": 0.8571428571428571,
         "recall": 1.0,
-        "f1": 0.9375,
+        "f1": 0.9230769230769231,
         "support": 30
       },
       "severe_toxic": {
@@ -60,9 +60,9 @@
         "support": 5
       },
       "obscene": {
-        "precision": 0.8888888888888888,
-        "recall": 0.8,
-        "f1": 0.8421052631578947,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
         "support": 10
       },
       "threat": {
@@ -72,9 +72,9 @@
         "support": 0
       },
       "insult": {
-        "precision": 0.9545454545454546,
-        "recall": 0.9545454545454546,
-        "f1": 0.9545454545454546,
+        "precision": 0.7142857142857143,
+        "recall": 0.9090909090909091,
+        "f1": 0.8,
         "support": 22
       },
       "identity_hate": {
@@ -88,7 +88,7 @@
   "golden_set": {
     "n_examples": 18,
     "macro_f1": 0.43428571428571433,
-    "micro_f1": 0.5925925925925926,
+    "micro_f1": 0.5714285714285714,
     "per_label": {
       "toxic": {
         "precision": 1.0,
@@ -228,6 +228,7 @@
           "toxic"
         ],
         "predicted": [
+          "obscene",
           "threat",
           "toxic"
         ],

@@ -31,7 +31,7 @@ _EN_WORDS = {
 # High-frequency Shona core function words and vocabulary
 _SN_WORDS = {
     "uye", "asi", "nekuti", "pane", "munhu", "vanhu", "zvakanaka", "zvakaipa",
-    "mhoro", "kwete", "hongu", "chii", "sei", "kuti", "zve", "zvose", "ndiri",
+    "mhoro", "mhoroi", "kwete", "hongu", "chii", "sei", "kuti", "zve", "zvose", "ndiri",
     "uri", "ari", "isu", "imi", "ivo", "basa", "imba", "vana", "amai", "baba",
     "hama", "zuva", "gore", "nyika", "mutauro", "chero", "pano", "apo", "kuno",
     "ikoko", "iko", "ivo", "avo", "uyu", "ava", "iyi", "idzi", "ichi", "izvi",
@@ -40,12 +40,20 @@ _SN_WORDS = {
     "ndinotenda", "unotenda", "tinotenda", "ndinokutendai", "ndinoda", "anoda",
     "zvangu", "zvako", "zvake", "zvavo", "wangu", "wako", "wake", "wavo",
     "ndiani", "riini", "nepi", "kupi", "chete", "bva", "kana", "saka", "zvikuru",
-    "ndichakuuraya", "uraya", "benzi", "dofo", "mbavha", "bata", "famba", "ona"
+    "ndichakuuraya", "uraya", "benzi", "dofo", "mbavha", "bata", "famba", "ona",
+    "shamwari", "akanaka", "yakanaka", "chakanaka", "vakanaka", "wakanaka",
+    "mangwanani", "masikati", "manheru", "makadii", "wakadii", "sakadii",
+    "maswerasei", "waswerasei", "kwaziwai", "ndeipi", "titambire", "titambirei",
+    "mauya", "mauyai", "chisarai", "fambai", "maita", "ndatenda", "chiremba",
+    "chikoro", "mufaro", "mutsvene", "chiremera", "hupenyu", "upenyu", "rudo",
+    "rugare", "mwoyo", "moyo", "chingwa", "mvura", "bhora", "mutambo", "dzidzo",
+    "imbwa", "gonzo", "tsotsi", "muroyi", "chifeve", "mabeche", "svira", "beche",
+    "mboro", "mhata", "hure"
 }
 
 # Characteristic Shona morphological prefix patterns
 _SN_PREFIX_RE = re.compile(
-    r"^(?:zvak?|zvi|chik?|ndich?|vach?|uch?|ach?|tak?|mak?|mwak?|huku|kash|pa|ku|mu)[a-z]{3,}$"
+    r"^(?:zvak?|zvi|chik?|chak?|ndich?|vach?|uch?|ach?|tak?|mak?|mwak?|huku|kash|pa|ku|mu|aka|yaka|waka)[a-z]{3,}$"
 )
 
 # Characteristic Shona consonant clusters/digraphs

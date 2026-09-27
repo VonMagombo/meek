@@ -286,3 +286,84 @@ Kuremekedza vamwe,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
 Kuchengetedza mhuri,non-toxic,benign_conversational,0,kuchengetedza,,no,no,False
 Kufara pamwe,non-toxic,benign_conversational,0,kufara,,no,no,False
 Kutaura zvakanaka,non-toxic,benign_conversational,0,kutaura,,no,no,False
+Uri shamwari yangu,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri shamwari yakanaka kwazvo,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri shamwari yepedyo,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri shamwari yechokwadi,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri munhu akatendeka,non-toxic,benign_conversational,0,akatendeka,,no,no,False
+Uri munhu akachenjera,non-toxic,benign_conversational,0,akachenjera,,no,no,False
+Uri munhu ane rudo,non-toxic,benign_conversational,0,rudo,,no,no,False
+Uri munhu ane mwoyo murefu,non-toxic,benign_conversational,0,mwoyo,,no,no,False
+Uri munhu anonzwisisa,non-toxic,benign_conversational,0,kunzwisisa,,no,no,False
+Uri munhu anoremekedza,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
+Uri munhu ane shungu,non-toxic,benign_conversational,0,shungu,,no,no,False
+Uri mwana wechikoro akanaka,non-toxic,benign_conversational,0,mwana,,no,no,False
+Uri mutungamiri akanaka,non-toxic,benign_conversational,0,mutungamiri,,no,no,False
+Uri munhu anobatsira zvikuru,non-toxic,benign_conversational,0,kubatsira,,no,no,False
+Uri nhengo inokosha,non-toxic,benign_conversational,0,nhengo,,no,no,False
+Uri mukoma akanaka,non-toxic,benign_conversational,0,mukoma,,no,no,False
+Uri sisi vakanaka,non-toxic,benign_conversational,0,sisi,,no,no,False
+Uri baba vakanaka,non-toxic,benign_conversational,0,baba,,no,no,False
+Uri amai vakanaka,non-toxic,benign_conversational,0,amai,,no,no,False
+Uri mwanakomana wakanaka,non-toxic,benign_conversational,0,mwanakomana,,no,no,False
+Uri mwanasikana akanaka,non-toxic,benign_conversational,0,mwanasikana,,no,no,False
+Uri sekuru vakanaka,non-toxic,benign_conversational,0,sekuru,,no,no,False
+Uri ambuya vakanaka,non-toxic,benign_conversational,0,ambuya,,no,no,False
+Uri kure asi uri mumwoyo mangu,non-toxic,benign_conversational,0,mwoyo,,no,no,False
+Uri kupi shamwari yangu,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Uri sei nhasi,non-toxic,benign_conversational,0,sei,,no,no,False
+Uri kufara here nhasi,non-toxic,benign_conversational,0,kufara,,no,no,False
+Uri kuenda kuchikoro here,non-toxic,benign_conversational,0,chikoro,,no,no,False
+Uri kushanda zvakanaka,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Uri kuimba zvakanaka kwazvo,non-toxic,benign_conversational,0,kuimba,,no,no,False
+Uri kutaura chokwadi,non-toxic,benign_conversational,0,chokwadi,,no,no,False
+Uri kurarama zvakanaka,non-toxic,benign_conversational,0,kurarama,,no,no,False
+Mufaro uri mumoyo mangu,non-toxic,benign_conversational,0,mufaro,,no,no,False
+Mufaro uri mumba medu,non-toxic,benign_conversational,0,mufaro,,no,no,False
+Mufaro uri pakati pedu,non-toxic,benign_conversational,0,mufaro,,no,no,False
+Rugare rwuri pakati pedu,non-toxic,benign_conversational,0,rugare,,no,no,False
+Rudo rwuri mumhuri yedu,non-toxic,benign_conversational,0,rudo,,no,no,False
+Chiedza chiri pamusoro pedu,non-toxic,benign_conversational,0,chiedza,,no,no,False
+Basa riri kufamba zvakanaka,non-toxic,benign_conversational,0,basa,,no,no,False
+Chikafu chiri patafura,non-toxic,benign_conversational,0,chikafu,,no,no,False
+Mvura iri kunaya zvakanaka,non-toxic,benign_conversational,0,mvura,,no,no,False
+Zuva riri kubuda zvakanaka,non-toxic,benign_conversational,0,zuva,,no,no,False
+Mhuri iri kufara zvikuru,non-toxic,benign_conversational,0,mhuri,,no,no,False
+Iwe shamwari yangu yepedyo,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Iwe hama yangu yepamwoyo,non-toxic,benign_conversational,0,hama,,no,no,False
+Iwe unondifadza zvikuru,non-toxic,benign_conversational,0,kufadza,,no,no,False
+Iwe unotaura zvakanaka,non-toxic,benign_conversational,0,kutaura,,no,no,False
+Iwe unogona kubatsira,non-toxic,benign_conversational,0,kubatsira,,no,no,False
+Iwe unoziva kushanda nesimba,non-toxic,benign_conversational,0,kushanda,,no,no,False
+Iwe nemhuri yako muve nerugare,non-toxic,benign_conversational,0,rugare,,no,no,False
+Iwe nemumwe wako muri vanhu vakanaka,non-toxic,benign_conversational,0,vanhu,,no,no,False
+Iwe unoremekedzwa zvikuru,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
+Iwe uri munhu akanaka chaizvo,non-toxic,benign_conversational,0,munhu,,no,no,False
+Iwe wakachenjera zvikuru,non-toxic,benign_conversational,0,kuchenjera,,no,no,False
+Iwe wakafanana nababa vako,non-toxic,benign_conversational,0,kufanana,,no,no,False
+Iwe unodzidza nesimba,non-toxic,benign_conversational,0,kudzidza,,no,no,False
+Iwe unoda runyararo,non-toxic,benign_conversational,0,runyararo,,no,no,False
+Iwe ndiwe shamwari yechokwadi,non-toxic,benign_conversational,0,shamwari,,no,no,False
+Ndinokuremekedza iwe,non-toxic,benign_conversational,0,kuremekedza,,no,no,False
+Ndinokuda iwe nemhuri yako,non-toxic,benign_conversational,0,kuda,,no,no,False
+Tinokutendai iwe nehama dzako,non-toxic,benign_conversational,0,kutenda,,no,no,False
+Mwari vakuropafadze iwe,non-toxic,benign_conversational,0,mwari,,no,no,False
+Famba zvakanaka iwe,non-toxic,benign_conversational,0,kufamba,,no,no,False
+Titambire vaenzi vedu,non-toxic,benign_conversational,0,kutambira,,no,no,False
+Mauya mauya shamwari dzangu,non-toxic,benign_conversational,0,kuuya,,no,no,False
+Mauya kumba kwedu,non-toxic,benign_conversational,0,kuuya,,no,no,False
+Kwaziwai shamwari dzangu,non-toxic,benign_conversational,0,kwaziwai,,no,no,False
+Makorokoto nemufaro mukuru,non-toxic,benign_conversational,0,makorokoto,,no,no,False
+Makorokoto nebasa idzva,non-toxic,benign_conversational,0,makorokoto,,no,no,False
+Makorokoto nekupasa bvunzo,non-toxic,benign_conversational,0,makorokoto,,no,no,False
+Makorokoto nekuberekwa kwemwana,non-toxic,benign_conversational,0,makorokoto,,no,no,False
+Makorokoto nemuchato wenyu,non-toxic,benign_conversational,0,makorokoto,,no,no,False
+Titambire,non-toxic,benign_conversational,0,kutambira,,no,no,False
+Mauya,non-toxic,benign_conversational,0,kuuya,,no,no,False
+Titambirei,non-toxic,benign_conversational,0,kutambira,,no,no,False
+Mauyai,non-toxic,benign_conversational,0,kuuya,,no,no,False
+Maswerasei,non-toxic,benign_conversational,0,maswera,,no,no,False
+Maswera sei shamwari,non-toxic,benign_conversational,0,maswera,,no,no,False
+Waswera sei,non-toxic,benign_conversational,0,maswera,,no,no,False
+Ndaswera kana maswerawo,non-toxic,benign_conversational,0,maswera,,no,no,False
+Taswera kana maswerawo,non-toxic,benign_conversational,0,maswera,,no,no,False

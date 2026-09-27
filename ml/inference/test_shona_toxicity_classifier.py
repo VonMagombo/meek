@@ -35,6 +35,12 @@ def test_benign_conversational_phrases_not_flagged():
         "Maita basa zvikuru.",
         "Tinotenda nerubatsiro rwenyu.",
         "Zvakanaka chose shamwari yangu.",
+        "Uri shamwari yangu",
+        "Mufaro uri mumoyo mangu",
+        "Titambire",
+        "Mauya shamwari",
+        "Makorokoto nemufaro mukuru",
+        "Ndinokuda",
     ]
     for text in clean_phrases:
         res = classify(text)
@@ -44,8 +50,8 @@ def test_benign_conversational_phrases_not_flagged():
         assert (
             res.flagged_labels == []
         ), f"Benign phrase '{text}' had flagged labels: {res.flagged_labels}"
-        assert res.scores["toxic"] < 0.40, f"Toxic score too high for '{text}': {res.scores['toxic']}"
-        assert res.scores["insult"] < 0.40, f"Insult score too high for '{text}': {res.scores['insult']}"
+        assert res.scores["toxic"] < 0.35, f"Toxic score too high for '{text}': {res.scores['toxic']}"
+        assert res.scores["insult"] < 0.35, f"Insult score too high for '{text}': {res.scores['insult']}"
 
 
 def test_toxic_slurs_and_insults_flagged():
@@ -94,3 +100,43 @@ def test_classify_batch_consistency():
         assert b_res.flagged_labels == single_res.flagged_labels
         for label in LABELS:
             assert abs(b_res.scores[label] - single_res.scores[label]) < 1e-5
+
+
+def test_greeting_combined_with_slur_is_flagged():
+    """Verify whitelist guard does NOT prevent slurs in greetings from being flagged."""
+    slurred_greetings = [
+        "Mhoro iwe benzi",
+        "Mangwanani imbwa",
+        "Makadii zvenyu muroyi",
+    ]
+    for text in slurred_greetings:
+        res = classify(text)
+        assert res.is_toxic is True, f"Phrase with slur '{text}' was not flagged! Scores: {res.scores}"
+        assert "toxic" in res.flagged_labels or "insult" in res.flagged_labels
+
+
+def test_shona_language_detection():
+    from ml.preprocessing.language_detector import detect_language
+
+    shona_words = [
+        "shamwari",
+        "akanaka",
+        "mangwanani",
+        "masikati",
+        "titambire",
+        "mauya",
+        "uri munhu akanaka",
+        "uri imbwa",
+    ]
+    for w in shona_words:
+        assert detect_language(w) == "sn", f"Expected 'sn' for '{w}', got {detect_language(w)}"
+
+    english_words = [
+        "hello my friend",
+        "good morning",
+        "thank you very much",
+        "you are an idiot",
+    ]
+    for w in english_words:
+        assert detect_language(w) == "en", f"Expected 'en' for '{w}', got {detect_language(w)}"
+

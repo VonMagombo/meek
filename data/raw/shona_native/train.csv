@@ -285,3 +285,15 @@ gudo,toxic,animal,2,gudo,gudo|zigudo|makudo|uri gudo,yes,yes,False
 Shoko rokuti tsotsi riri mubhuku.,non-toxic,literal_or_metalinguistic,0,tsotsi,,yes,yes,True
 uri imbwa,toxic,animal,3,imbwa,uri imbwa,yes,yes,True
 Ndakaona chisina maturo mumutsara uyu.,non-toxic,literal_or_metalinguistic,0,chisina maturo,,no,yes,True
+Mhoro iwe benzi.,toxic,insult,2,benzi,,no,no,True
+Makadii zvenyu muroyi.,toxic,insult,3,muroyi,,no,no,True
+Mangwanani imbwa.,toxic,insult,2,imbwa,,no,no,True
+Masikati iwe chifeve.,toxic,sexual_slur,4,chifeve,,no,no,True
+Manheru iwe mbavha.,toxic,insult,2,mbavha,,no,no,True
+Mhoroi varoyi.,toxic,insult,3,muroyi,,no,no,True
+Wakadii zvako dofo.,toxic,insult,2,dofo,,no,no,True
+Ndeipi imbwa.,toxic,insult,2,imbwa,,no,no,True
+Kwaziwai mapenzi.,toxic,insult,2,benzi,,no,no,True
+Mhoro mbavha.,toxic,insult,2,mbavha,,no,no,True
+Mangwanani iwe benzi.,toxic,insult,2,benzi,,no,no,True
+Makadii iwe tsotsi.,toxic,insult,2,tsotsi,,no,no,True
