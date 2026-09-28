@@ -1,19 +1,19 @@
 {
   "silver_test": {
     "n_examples": 100,
-    "macro_f1": 0.4032475027554306,
-    "micro_f1": 0.4563758389261745,
+    "macro_f1": 0.4071976482476689,
+    "micro_f1": 0.4610169491525424,
     "per_label": {
       "toxic": {
-        "precision": 0.7222222222222222,
+        "precision": 0.7647058823529411,
         "recall": 0.5416666666666666,
-        "f1": 0.6190476190476191,
+        "f1": 0.6341463414634146,
         "support": 48
       },
       "severe_toxic": {
-        "precision": 0.36363636363636365,
+        "precision": 0.4,
         "recall": 0.2,
-        "f1": 0.25806451612903225,
+        "f1": 0.26666666666666666,
         "support": 20
       },
       "obscene": {
@@ -43,52 +43,52 @@
     }
   },
   "native_test": {
-    "n_examples": 120,
-    "macro_f1": 0.791449974545367,
-    "micro_f1": 0.8562300319488818,
+    "n_examples": 108,
+    "macro_f1": 0.7889843185037693,
+    "micro_f1": 0.8550185873605948,
     "per_label": {
       "toxic": {
-        "precision": 0.8472222222222222,
-        "recall": 0.9838709677419355,
-        "f1": 0.9104477611940298,
-        "support": 62
+        "precision": 0.8548387096774194,
+        "recall": 1.0,
+        "f1": 0.9217391304347826,
+        "support": 53
       },
       "severe_toxic": {
-        "precision": 0.42857142857142855,
-        "recall": 0.2727272727272727,
-        "f1": 0.3333333333333333,
-        "support": 11
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1": 0.4,
+        "support": 9
       },
       "obscene": {
-        "precision": 0.8333333333333334,
-        "recall": 0.9090909090909091,
-        "f1": 0.8695652173913043,
-        "support": 11
+        "precision": 0.75,
+        "recall": 0.9,
+        "f1": 0.8181818181818182,
+        "support": 10
       },
       "threat": {
         "precision": 1.0,
-        "recall": 0.875,
-        "f1": 0.9333333333333333,
-        "support": 8
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 7
       },
       "insult": {
-        "precision": 0.7962962962962963,
-        "recall": 0.9555555555555556,
-        "f1": 0.8686868686868687,
-        "support": 45
+        "precision": 0.782608695652174,
+        "recall": 0.9473684210526315,
+        "f1": 0.8571428571428571,
+        "support": 38
       },
       "identity_hate": {
-        "precision": 1.0,
-        "recall": 0.7142857142857143,
-        "f1": 0.8333333333333334,
-        "support": 14
+        "precision": 0.875,
+        "recall": 0.6363636363636364,
+        "f1": 0.7368421052631579,
+        "support": 11
       }
     }
   },
   "golden_set": {
     "n_examples": 18,
     "macro_f1": 0.5718181818181819,
-    "micro_f1": 0.7333333333333333,
+    "micro_f1": 0.7096774193548387,
     "per_label": {
       "toxic": {
         "precision": 1.0,
@@ -218,6 +218,7 @@
         ],
         "predicted": [
           "insult",
+          "severe_toxic",
           "threat",
           "toxic"
         ],

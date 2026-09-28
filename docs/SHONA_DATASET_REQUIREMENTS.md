@@ -6,16 +6,22 @@ This guide defines the specifications, taxonomy, and collection requirements for
 
 ## Status: Phase 1 complete
 
-`data/raw/shona_native/matthew_shona_dataset.csv` (352 rows) closes the
-Phase 1 gaps this guide was written to fix — see the README's "Shona
-support" section for the before/after F1 numbers. Native `threat` went from
-0 examples to real training + eval signal (F1 1.00 on native held-out test,
-n=7); native `identity_hate` went from 1 unsupported example to F1 0.737
-(n=11). Section 2's "Current Baseline" numbers below are the **pre-Phase-1**
-snapshot, kept as historical context for why this guide exists — they no
-longer describe the dataset's current state. Phase 2 (1,000-1,500 rows,
-Shonglish depth, regional dialect coverage) is still open; the taxonomy,
-schema, and workflow below remain the reference for contributing to it.
+`data/raw/shona_native/matthew_shona_dataset.csv` (473 rows, built across
+two rounds) closes the Phase 1 gaps this guide was written to fix — see the
+README's "Shona support" section for the full before/after F1 numbers and
+the two independent critic reviews the dataset went through. Native
+`threat` went from 0 examples to F1 0.933 on native held-out test (n=8);
+native `identity_hate` went from 1 unsupported example to F1 0.833 (n=14) —
+both now clear this doc's ">0.80" Phase 1 target. Section 2's "Current
+Baseline" numbers below are the **pre-Phase-1** snapshot, kept as historical
+context for why this guide exists — they no longer describe the dataset's
+current state. Current row counts against this doc's own targets: `threat`
+91/100-150, `ethnic_hate` 98/100-150, `ableist` (disability hate, split out
+of `ethnic_hate` — see README) 15, ChiHarare slang + Shonglish combined
+~100/250-300 by keyword scan — closer, but still the biggest remaining gap.
+Phase 2 (1,000-1,500 rows, deeper Shonglish, regional dialect coverage) is
+still open; the taxonomy, schema, and workflow below remain the reference
+for contributing to it.
 
 ---
 

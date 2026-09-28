@@ -96,7 +96,7 @@
 "Munhu ane chirema haafaniri kuwanikwa mukana wekushanda pano.","toxic","ableist","3","chirema"
 "Musope haafaniri kupinda muzvikwata zvedu, anosiyana nesu.","toxic","ableist","3","musope"
 "Vanhu vane utsanana hwakadaro havafaniri kugara nesu mudunhu rimwe.","toxic","ethnic_hate","3","utsanana"
-"Vatema vekune dzimwe nyika vanongouya kuzoita mabasa akaipa kuno chete.","toxic","ethnic_hate","3","vatorwa"
+"Vatorwa vekune dzimwe nyika vanongouya kuzoita mabasa akaipa kuno chete.","toxic","ethnic_hate","3","vatorwa"
 "Rudzi urwu rwakazvarwa rwakaipa, hapana chakanaka rwunobva narwo.","toxic","ethnic_hate","4","rudzi"
 "VaNdau vanongonzwisisa hondo chete, hapana zvimwe zvavanoziva.","toxic","ethnic_hate","2","rudzi"
 "Vanhu vokuKorekore havana ruzivo rwekutonga nyika.","toxic","ethnic_hate","2","rudzi"
@@ -311,43 +311,164 @@
 "Imbwa yemusha inorinda zvombo zvedu usiku.","non-toxic","literal_or_metalinguistic","0","imbwa"
 "Vanachiremba vanorapa vanhu vane matambudziko epfungwa netsitsi, havafanirwi kunzi mabenzi.","non-toxic","literal_or_metalinguistic","0","benzi"
 "Munhu ane albinism anofanira kudzivirirwa kubva kuzuva, kwete kunzi sope zvinozvidza.","non-toxic","literal_or_metalinguistic","0","sope"
-"Havadi kuona rudzi rwedu ruchibudirira, ndosaka vachingotitadzisa.",toxic,ethnic_hate,2,rudzi
-"Vamwe vanhu vanofunga kuti rudzi rwavo ndirwo rwakasikwa kutonga vamwe.",toxic,ethnic_hate,3,rudzi
-"Kutaura chirungu zvakanaka hakusi kuti wava murungu, iwe uchiri wenhando.",toxic,ethnic_hate,2,murungu
-"Vatorwa ava vanofanira kudzingwa venyika ino nekuti havana zvavanobatsira.",toxic,ethnic_hate,3,vatorwa
-"Ngatisatengesere mabasa edu kuvanhu vasiri vekwedu.",toxic,ethnic_hate,2,vatorwa
-"Rudzi rwavo runozivikanwa nekuita huwori pese pavanoenda.",toxic,ethnic_hate,3,rudzi
-"VaNdau havafaniri kutungamira nyika, havana ruzivo rwakakwana.",toxic,ethnic_hate,2,rudzi
-"Vanhu vekumusha uku havafaniri kuvimbwa nemabasa makuru eguta.",toxic,ethnic_hate,2,kumaruwa
-"Mhando yerudzi urwu haizivi kubata mari zvakanaka, vanongoparadza chete.",toxic,ethnic_hate,2,rudzi
-"Havafi vakabudirira ava, rudzi rwavo runozivikanwa nekukanganisa zvinhu.",toxic,ethnic_hate,2,rudzi
-"Tinofanira kuremekedza tsika dzevamwe vanhu pasinei nekuti vanobva kupi.",non-toxic,benign_conversational,0,tsika
-"Kudzidza mitauro yevamwe vanhu kunowedzera ruzivo rwedu.",non-toxic,benign_conversational,0,mitauro
-"Murungu neMutema vanogona kushanda pamwe chete zvakanaka.",non-toxic,benign_conversational,0,murungu
-"Vashandi vanobva kunyika dzakasiyana vanobatsirana pabasa redu.",non-toxic,benign_conversational,0,vatorwa
-"Nyika inobudirira kana vanhu vayo vachibatana pasinei nerudzi.",non-toxic,benign_conversational,0,rudzi
-"Uri murombo asina zano, unongoda kudya zvevamwe.",toxic,insult,2,murombo
-"Majita aya haana zvaanoita, vanongodhakwa zuva nezuva.",toxic,insult,2,majita
-"Uri chikwata chemunhu, hapana chaunobatsira musangano uno.",toxic,insult,2,chikwata
-"Zvauri kuita zvinoratidza kuti uri zimbudzana risina musoro.",toxic,insult,2,zimbudzana
-"Mbinga dzenhema idzi dzinongozvirumbidza pasina chadzinacho.",toxic,insult,2,mbinga
-"Uri gochi rinofamba pasina zano remuhupenyu.",toxic,insult,2,gochi
-"Vasikana venyu vanoita zvechimbwido pasina kunyara.",toxic,sexual_slur,3,chimbwido
-"Iwe hausi majita, uri mboko chaiyo inotadza kutaura zvine musoro.",toxic,insult,2,mboko
-"Mudhara uyu haasi shasha, ari kungoita zvekutaridza chete.",toxic,insult,1,mudhara
-"Chikwata ichi chizere nemarara asina zvachinobatsira mudunhu.",toxic,dehumanising,2,marara
-"Ndeipi majita, tirikuita sei nhasi?",non-toxic,benign_conversational,0,majita
-"Murombo haasi munhu akaipa, ndiye asina mari chete.",non-toxic,benign_conversational,0,murombo
-"Shasha yepabasa iyi inoshanda zvakanyanya kudarika vamwe.",non-toxic,benign_conversational,0,shasha
-"Musika uno une zvinhu zvakanaka zvakawanda nhasi.",non-toxic,benign_conversational,0,musika
-"Chikwata chedu chinoshanda nekubatana kuti tibudirire.",non-toxic,benign_conversational,0,chikwata
-"You are just a murombo trying to act rich, so fake.",toxic,insult,2,murombo
-"This mbinga is all talk, no action whatsoever.",toxic,insult,2,mbinga
-"Stop acting like a chimbwido, have some dignity.",toxic,sexual_slur,3,chimbwido
-"These majita are useless, vanongodhakwa the whole day.",toxic,insult,2,majita
-"You foreigners mabvakure need to leave our jobs alone.",toxic,ethnic_hate,3,mabvakure
-"I will find you nemhuri yako and finish this once and for all.",toxic,threat,4,kuparadza
-"That mudhara over there is such a legend, respect chaiyo.",non-toxic,benign_conversational,0,mudhara
-"Great hustle shamwari, that mbinga energy is inspiring.",non-toxic,benign_conversational,0,mbinga
-"Our chikwata worked so well together on this project.",non-toxic,benign_conversational,0,chikwata
-"Ndeipi guys, hope the weekend is treating you well.",non-toxic,benign_conversational,0,ndeipi
+"Havadi kuona rudzi rwedu ruchibudirira, ndosaka vachingotitadzisa.","toxic","ethnic_hate","2","rudzi"
+"Vamwe vanhu vanofunga kuti rudzi rwavo ndirwo rwakasikwa kutonga vamwe.","toxic","ethnic_hate","3","rudzi"
+"Kutaura chirungu zvakanaka hakusi kuti wava murungu, iwe uchiri wenhando.","toxic","ethnic_hate","2","murungu"
+"Vatorwa ava vanofanira kudzingwa venyika ino nekuti havana zvavanobatsira.","toxic","ethnic_hate","3","vatorwa"
+"Ngatisatengesere mabasa edu kuvanhu vasiri vekwedu.","toxic","ethnic_hate","2","vatorwa"
+"Rudzi rwavo runozivikanwa nekuita huwori pese pavanoenda.","toxic","ethnic_hate","3","rudzi"
+"VaNdau havafaniri kutungamira nyika, havana ruzivo rwakakwana.","toxic","ethnic_hate","2","rudzi"
+"Vanhu vekumusha uku havafaniri kuvimbwa nemabasa makuru eguta.","toxic","ethnic_hate","2","kumaruwa"
+"Mhando yerudzi urwu haizivi kubata mari zvakanaka, vanongoparadza chete.","toxic","ethnic_hate","2","rudzi"
+"Havafi vakabudirira ava, rudzi rwavo runozivikanwa nekukanganisa zvinhu.","toxic","ethnic_hate","2","rudzi"
+"Tinofanira kuremekedza tsika dzevamwe vanhu pasinei nekuti vanobva kupi.","non-toxic","benign_conversational","0","tsika"
+"Kudzidza mitauro yevamwe vanhu kunowedzera ruzivo rwedu.","non-toxic","benign_conversational","0","mitauro"
+"Murungu neMutema vanogona kushanda pamwe chete zvakanaka.","non-toxic","benign_conversational","0","murungu"
+"Vashandi vanobva kunyika dzakasiyana vanobatsirana pabasa redu.","non-toxic","benign_conversational","0","vatorwa"
+"Nyika inobudirira kana vanhu vayo vachibatana pasinei nerudzi.","non-toxic","benign_conversational","0","rudzi"
+"Uri murombo asina zano, unongoda kudya zvevamwe.","toxic","insult","2","murombo"
+"Majita aya haana zvaanoita, vanongodhakwa zuva nezuva.","toxic","insult","2","majita"
+"Uri chikwata chemunhu, hapana chaunobatsira musangano uno.","toxic","insult","2","chikwata"
+"Zvauri kuita zvinoratidza kuti uri zimbudzana risina musoro.","toxic","insult","2","zimbudzana"
+"Mbinga dzenhema idzi dzinongozvirumbidza pasina chadzinacho.","toxic","insult","2","mbinga"
+"Uri dununu rinofamba pasina zano remuhupenyu.","toxic","insult","2","dununu"
+"Vasikana venyu vanoita zvechimbwido pasina kunyara.","toxic","sexual_slur","3","chimbwido"
+"Iwe hausi majita, uri mboko chaiyo inotadza kutaura zvine musoro.","toxic","insult","2","mboko"
+"Mudhara uyu haasi shasha, ari kungoita zvekutaridza chete.","toxic","insult","1","mudhara"
+"Chikwata ichi chizere nemarara asina zvachinobatsira mudunhu.","toxic","dehumanising","2","marara"
+"Ndeipi majita, tirikuita sei nhasi?","non-toxic","benign_conversational","0","majita"
+"Murombo haasi munhu akaipa, ndiye asina mari chete.","non-toxic","benign_conversational","0","murombo"
+"Shasha yepabasa iyi inoshanda zvakanyanya kudarika vamwe.","non-toxic","benign_conversational","0","shasha"
+"Musika uno une zvinhu zvakanaka zvakawanda nhasi.","non-toxic","benign_conversational","0","musika"
+"Chikwata chedu chinoshanda nekubatana kuti tibudirire.","non-toxic","benign_conversational","0","chikwata"
+"You are just a murombo trying to act rich, so fake.","toxic","insult","2","murombo"
+"This mbinga is all talk, no action whatsoever.","toxic","insult","2","mbinga"
+"Stop acting like a chimbwido, have some dignity.","toxic","sexual_slur","3","chimbwido"
+"These majita are useless, vanongodhakwa the whole day.","toxic","insult","2","majita"
+"You foreigners mabvakure need to leave our jobs alone.","toxic","ethnic_hate","3","mabvakure"
+"I will find you nemhuri yako and finish this once and for all.","toxic","threat","4","kuparadza"
+"That mudhara over there is such a legend, respect chaiyo.","non-toxic","benign_conversational","0","mudhara"
+"Great hustle shamwari, that mbinga energy is inspiring.","non-toxic","benign_conversational","0","mbinga"
+"Our chikwata worked so well together on this project.","non-toxic","benign_conversational","0","chikwata"
+"Ndeipi guys, hope the weekend is treating you well.","non-toxic","benign_conversational","0","ndeipi"
+"Havafaniri kuroorana nesu vanhu verudzi urwu, vanotiparadzira mhuri.","toxic","ethnic_hate","3","rudzi"
+"Sabhuku vanofanira kutorwa kune rudzi rwedu chete, kwete kune vamwe.","toxic","ethnic_hate","2","rudzi"
+"Vana vevatorwa havafaniri kudzidza pamwe chete nevana vedu.","toxic","ethnic_hate","3","vatorwa"
+"Havafaniri kukokwa kumitambo yedu yechinyakare, havasi vamwe vedu.","toxic","ethnic_hate","2","rudzi"
+"Vanhu venyika dzepasi rose havafaniri kuwana zvibvumirano zvekugara muno.","toxic","ethnic_hate","2","vatorwa"
+"Kutaura kwavo kunonzwika seuchapupu hwekuti havasi vanhu chaivo venyika ino.","toxic","ethnic_hate","3","rudzi"
+"Vatorwa ndivo vanokonzera mhirizhonga yakawanda mudhorobha medu.","toxic","ethnic_hate","2","vatorwa"
+"Handisi kuzotengesa chinhu kumunhu werudzi urwu, vanongonyengedza pakutengesa.","toxic","ethnic_hate","2","rudzi"
+"Rudzi urwu rwakazvarirwa kunyengedza, hazviite kuvavimba nezvinhu zvakakosha.","toxic","ethnic_hate","3","rudzi"
+"Handidi kuti mwana wangu aroorane nemunhu werudzi urwu, hazvibviri.","toxic","ethnic_hate","3","rudzi"
+"Vanhu vekuno havadi kuona rudzi urwu ruchitonga dunhu redu.","toxic","ethnic_hate","2","rudzi"
+"Vatorwa vanobva kune dzimwe nyika havana zvavanobatsira, vanongouya kuzoita mhosva.","toxic","ethnic_hate","3","vatorwa"
+"Zvinonyadzisa kuti murume werudzi urwu ave sachigaro wedu, haana ruzivo.","toxic","ethnic_hate","3","rudzi"
+"Havafaniri kuuya kumariro edu, havazivi tsika dzedu.","toxic","ethnic_hate","2","rudzi"
+"Havafaniri kutumirwa mari yehurumende, vanongoitengesa kuvatorwa.","toxic","ethnic_hate","2","vatorwa"
+"Vamwe vanhu vanoti rudzi rwedu ndirwo rwega rwakachena, vamwe vese vakasvibiswa.","toxic","ethnic_hate","3","rudzi"
+"Vatorwa havachengeti hutano hwavo zvakanaka, vanouya nezvirwere kuno.","toxic","ethnic_hate","2","vatorwa"
+"Handisi kuroja mumba mangu kumunhu werudzi urwu, tinotya kuti vanouya nemhirizhonga.","toxic","ethnic_hate","2","rudzi"
+"Kutaura chiKaranga zvakanaka hakuite kuti muve vanhu vakakwana senesu.","toxic","ethnic_hate","2","rudzi"
+"Handisi kuzogamuchira murairo unobva kumunhu werudzi rwusiri rwedu.","toxic","ethnic_hate","2","rudzi"
+"Havafaniri kuchengetedzwa mari yemusangano, havavimbwe nayo.","toxic","ethnic_hate","2","rudzi"
+"Mazita avo haanzwisisike kwatiri, vanofanira kuachinja kana vachida kugara pano.","toxic","ethnic_hate","2","vatorwa"
+"Musafira kuvhotera munhu werudzi urwu, haazivi zvinodikanwa nesu.","toxic","ethnic_hate","3","vatorwa"
+"Manyuzi avo haafaniri kubudiswa muhurumende, vanongonyepa.","toxic","ethnic_hate","3","rudzi"
+"Hapana anokwanisa kuita shamwari yechokwadi nemunhu werudzi urwu.","toxic","ethnic_hate","2","vatorwa"
+"Rudzi rwedu ndirwo rwakakosha kupfuura rwose rwuri panyika ino.","toxic","ethnic_hate","3","rudzi"
+"Havafaniri kuiswa mumapurisa kana muhurumende, ndosaka nyika ichiramba iri munhamo.","toxic","ethnic_hate","2","rudzi"
+"Vamwe venyu vanoita mhirizhonga chete, ndosaka tichikutadzisai kupinda musangano.","toxic","ethnic_hate","2","rudzi"
+"Rudzi rwedu haruna basa nerudzi rwavo, ngatirege kuvhengana navo.","toxic","ethnic_hate","2","rudzi"
+"Vanhu vanotaura mutauro uyu havazivi kunyatsofunga senesu.","toxic","ethnic_hate","2","rudzi"
+"Vekumaruwa havafaniri kutungamira mabasa emuguta, havazive zvekuita.","toxic","ethnic_hate","2","kumaruwa"
+"Tinofanira kuvenga vanhu vanobva kunyika dzavo dzakasiyana nedzedu.","toxic","ethnic_hate","2","vatorwa"
+"Rudzi urwu runozivikanwa nekunyengera vamwe vanhu pabasa nemari.","toxic","ethnic_hate","2","rudzi"
+"Vanhu vakadaro vanozivikanwa nekutaura zvisinganzwisisike, vanotinyadzisa pavanotaura.","toxic","ethnic_hate","2","vatorwa"
+"Havafaniri kutorwa mutimu yenyika, havazokwanisi kumiririra isu zvakanaka.","toxic","ethnic_hate","2","rudzi"
+"Vanhu ava havazi vedu, hatifaniri kuvabvumira kutamba nevana vedu.","toxic","ethnic_hate","3","rudzi"
+"Kuderera kwemari yedu kwakakonzerwa nekuuya kwevanhu ava munyika medu.","toxic","ethnic_hate","2","rudzi"
+"Vanhu venyika iyoyo vanouya nemhosva, hazvina kunaka kuvasanganisa nesu.","toxic","ethnic_hate","2","vatorwa"
+"Vakuru vedu vaisatenda kuti rudzi urwu runofanira kuroorana nesu.","toxic","ethnic_hate","2","rudzi"
+"Vanhu vekumaruwa havagoni kuchenesa nzvimbo dzavanogara, vanosiya tsvina.","toxic","ethnic_hate","2","kumaruwa"
+"Kubva kunyika iyoyo hakusi kuti wava munhu akakodzera kutonga vamwe.","toxic","ethnic_hate","2","vatorwa"
+"Havafaniri kukwanisa kupinda mumitambo yedu yechinyakare.","toxic","ethnic_hate","2","vatorwa"
+"Hatidi vanakomana vedu kuroora vasikana vekumaruwa, havazivi maitiro emuguta.","toxic","ethnic_hate","2","kumaruwa"
+"Zvinonyadzisa kuti vatorwa vari kutakura mabasa ega ega asara kuvanhu vemuno.","toxic","ethnic_hate","2","vatorwa"
+"Rudzi rwavo runongova nezano rekutorera vamwe zvinhu zvavo.","toxic","ethnic_hate","2","rudzi"
+"Havafaniri kukwidziridzwa pabasa, kunyange vakashanda zvakanaka, nekuti harisi rudzi rwedu.","toxic","ethnic_hate","2","rudzi"
+"Vamwe vari kunyunyuta kuti rudzi rwedu ndirwo runoparadza nyika, asi ndivo vanotanga mhirizhonga.","toxic","ethnic_hate","2","rudzi"
+"Vatorwa ava havadi kuremekedza zvinotarisirwa nevanhu vemuno.","toxic","ethnic_hate","2","vatorwa"
+"Havazokwanisi kubudirira, rudzi urwu harusati rwamboita chinhu chakanaka.","toxic","ethnic_hate","3","rudzi"
+"Tinofanira kuremekedza vanhu vese pasinei nerudzi kana nyika yavakabva.","non-toxic","benign_conversational","0","rudzi"
+"Kudzidza nezvetsika dzevamwe vanhu kunowedzera hunhu hwedu.","non-toxic","benign_conversational","0","tsika"
+"Vashandi vanobva kudzimwe nyika vari kubatsira zvakanyanya paumhuri hwedu hwebasa.","non-toxic","benign_conversational","0","vatorwa"
+"Rudzi rwedu rwuri kubudirira nekuda kwekubatana nevamwe vanhu vese venyika.","non-toxic","benign_conversational","0","rudzi"
+"Vana vanofanira kudzidziswa kuremekedza vamwe pasinei nekwavakabva.","non-toxic","benign_conversational","0","kuremekedza"
+"Sabhuku vedu vakagamuchira vaeni zvakanaka pamhemberero.","non-toxic","benign_conversational","0","vaeni"
+"Kuwirirana pakati pemarudzi akasiyana kunovaka nyika inobudirira.","non-toxic","benign_conversational","0","rudzi"
+"Vashandi vari kubva kunyika dzakasiyana siyana vanopa musanganiswa wehunyanzvi hwakakosha.","non-toxic","benign_conversational","0","vatorwa"
+"Vekumaruwa nevekuguta vanofanira kubatana pakuvaka nyika.","non-toxic","benign_conversational","0","kumaruwa"
+"Rudzi rwega rwega rwune tsika dzarwo dzinokosha, hapana rwuri pamusoro pedu.","non-toxic","benign_conversational","0","rudzi"
+"Aiwa mudhara, unofunga rudzi rwega rwega rwakaita zvakanaka nezvakaipa, hapana rwakachena chose.","non-toxic","benign_conversational","0","rudzi"
+"Iwe hausi majita, uri mboko chaiyo rinofamba pasina musoro.","toxic","insult","2","mboko"
+"Zvauri kutaura zvinongoratidza kuti uri mboko risina hana.","toxic","insult","2","mboko"
+"Vamwe vanhu vari kungoita mboko pamberi pevanhu vakawanda.","toxic","insult","1","mboko"
+"Madhara aya ari kungotamba nemari yevanhu, hazvina musoro.","toxic","accusation","2","madhara"
+"Uri dununu risina kana zano rimwe muhupenyu hwako.","toxic","insult","2","dununu"
+"Kuita dununu kwako kunonyadzisa mhuri yese.","toxic","insult","2","dununu"
+"Mbinga dzemhando iyi hadzina zvadzinoita kunze kwekuzvirumbidza.","toxic","insult","2","mbinga"
+"Anofunga kuti mbinga here, asi hapana chaachiita chinobatsira.","toxic","insult","1","mbinga"
+"Vasikana venyu vari kuita zvimbwido pachena pasina kunyara.","toxic","sexual_slur","3","chimbwido"
+"Chimbwido ichi chinongodyiswa nevarume vasingazivikanwe.","toxic","sexual_slur","3","chimbwido"
+"Murombo uyu haana zvaanoziva, anongoda kutorera vamwe zvavakashandira.","toxic","insult","2","murombo"
+"Uri murombo wepfungwa, hausi wemari chete.","toxic","insult","2","murombo"
+"Chikwata ichi chizere nemadhara asina basa.","toxic","dehumanising","2","chikwata"
+"Zvimbwanana zveavo vanhu hazvibatsire chinhu pamusangano uno.","toxic","animal","2","mbwa"
+"Uri imbwa yekumhanyira zvakanaka zvevamwe.","toxic","animal","2","imbwa"
+"Iwe uri gonzo remunhu, unongovandira mikana yevamwe.","toxic","animal","3","gonzo"
+"Marara aya evanhu haafaniri kuchengetwa munzvimbo ino.","toxic","dehumanising","3","marara"
+"Zvaunotaura zvinongoita marara asina musoro.","toxic","insult","1","marara"
+"Uri hure risinganyare pamberi pevanhu.","toxic","sexual_slur","4","hure"
+"Chifeve ichi chinongofamba nemurume upi neupi.","toxic","sexual_slur","4","chifeve"
+"Uri benzi remhando yakakwirira, hauzivi zvaunotaura.","toxic","insult","2","benzi"
+"Zvaunoita hazvisi zvemunhu ane pfungwa, uri benzi.","toxic","insult","2","benzi"
+"Mbavha dzemhando iyi hadzife dzabudirira muhupenyu.","toxic","accusation","2","mbavha"
+"Iwe uri mbavha yepamusoro, unoba kunyange kuvimba kwevanhu.","toxic","accusation","3","mbavha"
+"Zimbudzana rako harina zano remuhupenyu hwaro.","toxic","insult","2","zimbudzana"
+"Uri zimbudzana risina hunhu pamberi pevanhu vakuru.","toxic","insult","2","zimbudzana"
+"Ndeipi majita, tirikubatana sei nyaya dzemusika?","non-toxic","benign_conversational","0","majita"
+"Kiya-kiya dzangu dziri kufamba zvakanaka mwedzi uno.","non-toxic","benign_conversational","0","kiya-kiya"
+"Ndiri kuita kiya-kiya kuti ndiwane mari yekuwedzera pabasa rangu.","non-toxic","benign_conversational","0","kiya-kiya"
+"Ndeipi sturi, chii chiri kuitika kudivi rako?","non-toxic","benign_conversational","0","sturi"
+"Handisi kuita dhiri newe kana usina kutanga kubvuma mutemo.","non-toxic","benign_conversational","0","dhiri"
+"Party racho rakanaka bhoo chaizvo, tese takafara.","non-toxic","benign_conversational","0","bhoo"
+"Mudhara uyu ishasha yechokwadi pabasa rekuvaka.","non-toxic","benign_conversational","0","shasha"
+"Chikwata chedu chakanakidzwa nemutambo wemusi weSvondo.","non-toxic","benign_conversational","0","chikwata"
+"Vasikana ava vari kuita mabasa avo zvakanaka pasina zvimbwido.","non-toxic","benign_conversational","0","chimbwido"
+"Mbinga chaiyo inobatsira nzanga yayo pasina kuzvirumbidza.","non-toxic","benign_conversational","0","mbinga"
+"Murombo haasi munhu asina musoro, ndiye asina mari zvakangodaro.","non-toxic","benign_conversational","0","murombo"
+"Majita edu akashanda zvakanyanya kuvaka chikoro chedu.","non-toxic","benign_conversational","0","majita"
+"Imbwa nembwa dzemumusha dzinofarira kutamba pamwe chete.","non-toxic","literal_or_metalinguistic","0","mbwa"
+"Gonzo remusango rakaonekwa richityaira mumunda.","non-toxic","literal_or_metalinguistic","0","gonzo"
+"You are just a mboko trying to act smart online.","toxic","insult","2","mboko"
+"This dununu has no clue what he's even talking about.","toxic","insult","2","dununu"
+"These madhara are just wasting everyone's money.","toxic","accusation","2","madhara"
+"You're such a murombo mentally, not just financially.","toxic","insult","2","murombo"
+"Stop acting like a zimbudzana in front of everyone.","toxic","insult","2","zimbudzana"
+"That chikwata is full of marara, nobody respects them.","toxic","dehumanising","2","marara"
+"She's behaving like a full-on chimbwido, no shame at all.","toxic","sexual_slur","3","chimbwido"
+"This guy is a straight up mbavha, stole my whole idea.","toxic","accusation","2","mbavha"
+"Why are you such a benzi about this simple thing.","toxic","insult","2","benzi"
+"These mbinga types online are all talk, no real hustle.","toxic","insult","2","mbinga"
+"You dress like a hure and then complain about respect.","toxic","sexual_slur","4","hure"
+"I'm doing kiya-kiya on the side to pay rent this month.","non-toxic","benign_conversational","0","kiya-kiya"
+"What's the sturi with the new job offer, tell me more.","non-toxic","benign_conversational","0","sturi"
+"That mudhara is a real shasha at fixing cars.","non-toxic","benign_conversational","0","shasha"
+"Our chikwata linked up for a braai this weekend, it was so much fun.","non-toxic","benign_conversational","0","chikwata"
+"Ndeipi fam, how's the hustle going this side?","non-toxic","benign_conversational","0","ndeipi"
+"This mbinga energy at work is actually inspiring the whole team.","non-toxic","benign_conversational","0","mbinga"
+"Sending love kumhuri yenyu during this tough time.","non-toxic","benign_conversational","0","mhuri"
+"Madhara emusha akaungana kuzotaura nyaya dzekare pasi pomuti.","non-toxic","literal_or_metalinguistic","0","madhara"
+"Zimbudzana rakaberekwa nemhuri yedu manheru apfuura.","non-toxic","literal_or_metalinguistic","0","zimbudzana"
+"Big up to the majita who organized this event so well.","non-toxic","benign_conversational","0","majita"
